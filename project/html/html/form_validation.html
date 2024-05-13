@@ -39,6 +39,48 @@
 
     <main>
         <h1>Form Validation</h1>
+        <p>
+            Used to ensure accurate and properly formatted user input,
+            enhance user experience,
+            and prevent invalid data from reaching the server.
+        </p>
+        <h2>Attributes</h2>
+        <form action="/submit" method="post">
+            <!-- pattern -->
+            <h3>Pattern</h3>
+
+            <h4>Code</h4>
+            <pre>
+                <code>
+                    &lt;p&gt;Postcode:&lt;/p&gt;
+                    &lt;input 
+                        type="text" 
+                        name="postcode" 
+                        pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]?\s[0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}"
+                        title="Enter a valid UK postcode"
+                        placeholder="e.g. AB1 2CD"
+                    &gt;
+                </code>
+            </pre>
+
+            <h4>Output</h4>
+            <p>Postcode:</p>
+            <input 
+                type="text" 
+                name="postcode" 
+                pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]?\s[0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}"
+                title="Enter a valid UK postcode."
+                placeholder="e.g. AB1 2CD"
+            >
+            <!--
+            regex pattern:
+            [A-Za-z]{1,2}                       Matches one or two letters (area code)
+            [0-9Rr]                             Matches one digit or the letter R/r (district code)
+            [0-9A-Za-z]?                        Optionally matches one digit or letter (sector)
+            \s                                  Matches a single whitespace character (optional space)
+            [0-9]                               Matches one digit (unit)
+            [ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}   Matches two letters (unit)
+            -->
     </main>
 
 
