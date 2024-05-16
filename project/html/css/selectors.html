@@ -27,6 +27,11 @@
         #my-id {
             font-style: italic;
         }
+
+        /* attribute selector */
+        input[type="text"] {
+            border: 1px solid black;        
+        }
     </style>
 
 
@@ -138,6 +143,23 @@
 
         <h3>Output</h3>
         <p id="my-id">This is a third paragraph.</p>
+
+        <!-- attribute -->
+        <h2>Attribute</h2>
+
+        <h3>Code</h3>
+        <pre>
+            <code>
+                input[type="text"] {
+                    border: 1px solid black;        
+                }
+
+                &lt;input type="text" placeholder="Type something..."&gt;
+            </code>
+        </pre>
+
+        <h3>Output</h3>
+        <input type="text" placeholder="Type something...">
     </main>
 
 
