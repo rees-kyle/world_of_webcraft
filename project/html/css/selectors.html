@@ -37,6 +37,11 @@
         div p {
             background-color: green;
         }
+
+        /* child selector */
+        ul > li {
+            list-style-type: square;
+        }
     </style>
 
 
@@ -186,6 +191,29 @@
         <div>
             <p>This paragraph is inside a div.</p>
         </div>
+
+        <!-- child -->
+        <h2>Child</h2>
+
+        <h3>Code</h3>
+        <pre>
+            <code>
+                ul > li {
+                    list-style-type: square;
+                }
+
+                &lt;ul&gt;
+                    &lt;li&gt;Item 1&lt;/li&gt;
+                    &lt;li&gt;Item 2&lt;/li&gt;
+                &lt;/ul&gt;
+            </code>
+        </pre>
+
+        <h3>Output</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
     </main>
 
 
