@@ -32,6 +32,11 @@
         input[type="text"] {
             border: 1px solid black;        
         }
+
+        /* descendant selector */
+        div p {
+            background-color: green;
+        }
     </style>
 
 
@@ -160,6 +165,27 @@
 
         <h3>Output</h3>
         <input type="text" placeholder="Type something...">
+
+        <!-- descendant -->
+        <h2>Descendant</h2>
+
+        <h3>Code</h3>
+        <pre>
+            <code>
+                div p {
+                    background-color: green;
+                }
+
+                &lt;div&gt;
+                    &lt;p&gt;This paragraph is inside a div.&lt;/p&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+
+        <h3>Output</h3>
+        <div>
+            <p>This paragraph is inside a div.</p>
+        </div>
     </main>
 
 
