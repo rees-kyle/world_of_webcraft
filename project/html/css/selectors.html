@@ -57,6 +57,11 @@
         a:hover {
             color: blueviolet;
         }
+
+        /* pseudo-elements */
+        p::first-line {
+            text-transform: uppercase;
+        }
     </style>
 
 
@@ -284,6 +289,21 @@
 
         <h3>Output</h3>
         <a href="#">Hover over me</a>
+
+        <!-- pseudo-elements -->
+        <h2>Pseudo-elements</h2>
+
+        <h3>Code</h3>
+        <pre>
+            <code>
+                p::first-line {
+                    text-transform: uppercase;
+                }
+            </code>
+        </pre>
+
+        <h3>Output</h3>
+        <p>This is a paragraph with multiple lines. It acts as a demonstration of the ::first-line pseudo-element.</p>
     </main>
 
 
