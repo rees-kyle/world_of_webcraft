@@ -42,6 +42,11 @@
         ul > li {
             list-style-type: square;
         }
+
+        /* adjacent sibling selector */
+        h4 + p {
+            margin-top: 50px;
+        }
     </style>
 
 
@@ -214,6 +219,25 @@
             <li>Item 1</li>
             <li>Item 2</li>
         </ul>
+
+        <!-- adjacent sibling -->
+        <h2>Adjacent Sibling</h2>
+
+        <h3>Code</h3>
+        <pre>
+            <code>
+                h4 + p {
+                    margin-top: 50px;
+                }
+
+                &lt;h4&gt;Fourth-Level Heading&lt;/h4&gt;
+                &lt;p&gt;This paragraph is a sibling of a fourth-level heading.&lt;/p&gt;
+            </code>
+        </pre>
+
+        <h3>Output</h3>
+        <h4>Fourth-Level Heading</h4>
+        <p>This paragraph is a sibling of a fourth-level heading.</p>
     </main>
 
 
