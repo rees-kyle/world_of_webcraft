@@ -24,6 +24,39 @@
         padding: 5px;
         margin-right: 10px;
         }
+
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+
+        .parent {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        .relative {
+            position: relative;
+            top: 50px;
+            left: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+        }
     </style>
 
 </head>
@@ -123,6 +156,94 @@
         <span class="inline">Inline Element 1</span>
         <span class="inline">Inline Element 2</span>
         <span class="inline">Inline Element 3</span>
+
+        <!-- position -->
+        <h3>Position</h3>
+        <p>Specifies the positioning method of an element.</p>
+
+            <!-- relative -->
+        <h4>Relative</h4>
+        <h5>Code</h5>
+        <pre>
+            <code>
+                .container {
+                    position: relative;
+                    width: 300px;
+                    height: 300px;
+                    background-color: lightblue;
+                    border: 1px solid #000;
+                    margin-bottom: 20px;
+                }
+
+                .parent {
+                    width: 200px;
+                    height: 200px;
+                    background-color: yellow;
+                }
+
+                .relative {
+                    position: relative;
+                    top: 50px;
+                    left: 30px;
+                    width: 100px;
+                    height: 100px;
+                    background-color: lightcoral;
+                }
+
+
+                &lt;div class="container"&gt;
+                    &lt;div class="parent"&gt;
+                        &lt;div class="relative"&gt;Relative&lt;/div&gt;
+                    &lt;/div&gt;
+                </div>
+            </code>
+        </pre>
+
+        <h5>Output</h5>
+        <div class="container">
+            <div class="parent">
+                <div class="relative">Relative</div>
+            </div>
+        </div>
+
+        <ul>
+            <li>The child element moves relative to where it would normally be within the parent.</li>
+            <li>It still affects the layout of other elements within the parent.</li>
+        </ul>
+
+            <!-- absolute -->
+        <h4>Absolute</h4>
+        <h5>Code</h5>
+        <pre>
+            <code>
+                .absolute {
+                    position: absolute;
+                    top: 50px;
+                    right: 20px;
+                    width: 100px;
+                    height: 100px;
+                    background-color: lightgreen;
+                }
+
+
+                &lt;div class="container"&gt;
+                    &lt;div class="parent"&gt;
+                        &lt;div class="relative"&gt;Relative&lt;/div&gt;
+                    &lt;/div&gt;
+            </code>
+        </pre>
+
+        <h5>Output</h5>
+        <div class="container">
+            <div class="parent">
+                <div class="absolute">Absolute</div>
+            </div>
+        </div>
+
+        <ul>
+            <li>The child element is positioned relative to the .parent element.</li>
+            <li>It does not affect the layout of other elements within the parent, as it is taken out of the normal document flow.</li>
+        </ul>
     </main>
 
 
