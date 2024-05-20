@@ -6,8 +6,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>World of Webcraft - Float and Clear Properties</title>
+    <style>
+        .container {
+            overflow: hidden; /* hides any content that spills outside its container, maintaining a clean layout */
+        }
 
+        .float-left {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .float-none {
+            float: none;
+        }
+    </style>
 
 </head>
 
@@ -56,7 +73,111 @@
 
 
     <main>
+        <h1>Float and Clear Properties</h1>
+        <!-- float -->
+        <h2>Float</h2>
+        <p>
+            The float property in CSS is primarily used to position elements horizontally within their containing element.
+            It's commonly used for creating layouts where elements can be floated to the left or right,
+            allowing other elements to flow around them, 
+            which is particularly useful for creating multi-column layouts or aligning images and text side by side.
+        </p>
 
+            <!-- left -->
+        <h3>Left</h3>
+        <h4>Code</h4>
+        <pre>
+            <code>
+                .float-left {
+                    float: left;
+                    margin-right: 10px;
+                }
+
+
+                &lt;div class="container"&gt;
+                    &lt;img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left"&gt;
+                    &lt;p&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+
+        <h4>Output</h4>
+        <div class="container">
+            <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left">
+            <p>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.
+            </p>
+        </div>
+
+            <!-- right -->
+        <h3>Right</h3>
+        <h4>Code</h4>
+        <pre>
+            <code>
+                .float-right {
+                    float: right;
+                }
+
+
+                &lt;img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-right"&gt;
+            </code>
+        </pre>
+
+        <h4>Output</h4>
+        <div class="container">
+            <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-right">
+            <p>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.
+            </p>
+        </div>
+
+            <!-- none -->
+        <h3>None</h3>
+        <h4>Code</h4>
+        <pre>
+            <code>
+                .float-none {
+                    float: none;
+                }
+
+
+                &lt;img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-none"&gt;
+            </code>
+        </pre>
+
+        <h4>Output</h4>
+        <div class="container">
+            <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-none">
+            <p>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.
+            </p>
+        </div>
     </main>
 
 
