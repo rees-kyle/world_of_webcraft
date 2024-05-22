@@ -24,6 +24,11 @@
         .float-none {
             float: none;
         }
+
+        .clear-left {
+            clear: left;
+            background-color: rgb(74, 190, 105);
+        }
     </style>
 
 </head>
@@ -165,9 +170,57 @@
             </code>
         </pre>
 
+        <!-- clear -->
+        <h2>Clear</h2>
+        <p>
+            Used to control the behavior of an element concerning floated elements that come before it in the HTML markup.
+            When you apply the clear property to an element,
+            you're essentially telling it to move below any floated elements that appear before it.
+        </p>
+
+            <!-- left -->
+        <h3>Left</h3>
+        <h4>Code</h4>
+        <pre>
+            <code>
+
+                .clear-left {
+                    clear: left;
+                    background-color: rgb(74, 190, 105);
+                }
+
+
+                &lt;div class="container"&gt;
+                    &lt;img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left"&gt;
+                    &lt;p class="clear-left"&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.&lt;br&gt;
+                        This is a paragraph.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+
         <h4>Output</h4>
         <div class="container">
-            <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-none">
+            <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left">
+            <p class="clear-left">
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.<br>
+                This is a paragraph.
+            </p>
+        </div>
+        <p>Below is the output without the clear property:</p>
+        <div class="container">
+            <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left">
             <p>
                 This is a paragraph.<br>
                 This is a paragraph.<br>
@@ -178,6 +231,14 @@
                 This is a paragraph.
             </p>
         </div>
+
+            <!-- others -->
+        <h3>Others</h3>
+        <ul>
+            <li><strong>clear: right;</strong> The element will move below any floated elements that are floated to the right.</li>
+        <li><strong>clear: both;</strong> The element will move below any floated elements regardless of their direction (left or right).</li>
+        <li><strong>clear: none;</strong> The element will not move below any floated elements. This is the default value.</li>
+        </ul>
     </main>
 
 
