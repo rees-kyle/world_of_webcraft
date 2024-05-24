@@ -35,6 +35,15 @@
         .background-color {
             background-color: green;
         }
+
+        .image {
+            background-image: url('../../images/mountains.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 100px 85px;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -201,6 +210,27 @@
 
         <h5>Output</h5>
         <div class="background-color">Green background color.</div>
+
+            <!-- image -->
+        <h4>Image</h4>
+        <h5>Code</h5>
+        <pre>
+            <code>
+                .image {
+                    background-image: url('../../images/mountains.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    padding: 100px 100px 85px;
+                    color: white;
+                    text-align: center;
+                }
+
+                &lt;div class="image"&gt;Text with a background image.&lt;/div&gt;
+            </code>
+        </pre>
+
+        <h5>Output</h5>
+        <div class="image">Text with a background image.</div>
     </main>
 
 
