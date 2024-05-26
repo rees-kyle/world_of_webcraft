@@ -6,9 +6,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-
-
+    <title>World of Webcraft - Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 200px 1fr; /* Three columns: 100px, 200px, and the rest of the available space */
+            grid-template-rows: 75px auto; /* Two rows: 50px tall, and the rest of the available space */
+            grid-gap: 10px; /* 10px gap between rows and columns */
+        }
+  
+        .grid-item {
+            background-color: #ddd;
+            padding: 10px;
+            border: 1px solid #999;
+        }
+  
+        .spanning-item {
+            grid-column: 2 / 4; /* Item starts at the second column and ends at the fourth column */
+            grid-row: 1; /* Item occupies the first row */
+        }
+    </style>
 </head>
 
 <!-- 'body' section for page content -->
@@ -56,7 +73,57 @@
 
 
     <main>
+        <h1>Grid</h1>
+        <h2>Code</h2>
+        <pre>
+            <code>
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: 100px 200px 1fr;
+                    grid-template-rows: 75px auto;
+                    grid-gap: 10px;
+                }
+  
+                .grid-item {
+                    background-color:
+                    padding: 10px;
+                    border: 1px solid
+                }
+  
+                .spanning-item {
+                    grid-column: 2 / 4;
+                    grid-row: 1;
+                }
 
+
+                &lt;div class="grid-container"&gt;
+                    &lt;div class="grid-item"&gt;1&lt;/div&gt;
+                    &lt;div class="grid-item spanning-item"&gt;2 (Spanning Item)&lt;/div&gt;
+                    &lt;div class="grid-item"&gt;3&lt;/div&gt;
+                    &lt;div class="grid-item"&gt;4&lt;/div&gt;
+                    &lt;div class="grid-item"&gt;5&lt;/div&gt;
+                    &lt;div class="grid-item"&gt;6&lt;/div&gt;
+                    &lt;div class="grid-item"&gt;7&lt;/div&gt;
+                    &lt;div class="grid-item"&gt;8&lt;/div&gt;
+                    &lt;div class="grid-item"&gt;9&lt;/div&gt;
+                    &lt;div class="grid-item"&gt;10&lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+
+        <h2>Output</h2>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item spanning-item">2 (Spanning Item)</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">10</div>
+        </div>
     </main>
 
 
