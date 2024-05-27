@@ -6,9 +6,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>World of Webcraft - Transitions and Animations</title>
+    <style>
+        /* CSS for Transitions */
+        .box-transition {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: width 2s, /* Width transition over 2 seconds */
+                        background-color 2s, /* Background color transition over 2 seconds */
+                        transform 2s; /* Transform (rotation) transition over 2 seconds */
+        }
 
-
+        .box-transition:hover {
+            width: 200px; /* Change the width of the box to 200px */
+            background-color: red; /* Change the background color of the box to red */
+            transform: rotate(45deg); /* Rotate the box 45 degrees */
+        }
+    </style>
 </head>
 
 <!-- 'body' section for page content -->
@@ -56,7 +71,31 @@
 
 
     <main>
+        <h1>Transitions and Animations</h1>
+        <h2>Transitions</h2>
+        <h3>Code</h3>
+        <pre>
+            <code>
+                .box-transition {
+                    width: 100px;
+                    height: 100px;
+                    background-color: blue;
+                    transition: width 2s, background-color 2s, transform 2s;
+                }
 
+                .box-transition:hover {
+                    width: 200px;
+                    background-color: red;
+                    transform: rotate(45deg);
+                }
+
+
+                &lt;div class="box-transition"&gt;&lt;/div&gt;
+            </code>
+        </pre>
+
+        <h3>Output</h3>
+        <div class="box-transition"></div>
     </main>
 
 
