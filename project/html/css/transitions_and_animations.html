@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World of Webcraft - Transitions and Animations</title>
     <style>
-        /* CSS for Transitions */
+        /* Transitions */
         .box-transition {
             width: 100px;
             height: 100px;
@@ -22,6 +22,46 @@
             width: 200px; /* Change the width of the box to 200px */
             background-color: red; /* Change the background color of the box to red */
             transform: rotate(45deg); /* Rotate the box 45 degrees */
+        }
+
+
+        /* Animations */
+        /* Define the keyframes for the animation */
+        @keyframes slideAndFade {
+            /* Start of the animation */
+            0% {
+                /* Translate the element horizontally by 0 pixels */
+                transform: translateX(0);
+                opacity: 1;
+            }
+            /* Middle of the animation */
+            50% {
+                /* Translate the element horizontally by 100 pixels */
+                transform: translateX(100px);
+                opacity: 0.5;
+            }
+            /* End of the animation */
+            100% {
+                /* Translate the element horizontally by 200 pixels */
+                transform: translateX(200px);
+                opacity: 1;
+            }
+        }
+
+        /* Apply the animation to an element */
+        .box-animation {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            animation-name: slideAndFade;
+            /* Define animation properties */
+            animation-duration: 4s; /* Duration of the animation */
+            animation-timing-function: ease; /* Speed curve of the animation */
+            animation-delay: 1s; /* Delay before the animation starts */
+            animation-iteration-count: infinite; /* Animation repeats infinitely */
+            animation-direction: alternate; /* Animation direction alternates */
+            animation-fill-mode: both; /* Element retains styles from both the start and end of the animation */
+            animation-play-state: running; /* Animation is running */
         }
     </style>
 </head>
@@ -72,6 +112,7 @@
 
     <main>
         <h1>Transitions and Animations</h1>
+        <!-- transitions -->
         <h2>Transitions</h2>
         <h3>Code</h3>
         <pre>
@@ -96,6 +137,49 @@
 
         <h3>Output</h3>
         <div class="box-transition"></div>
+
+
+        <!-- animations -->
+        <h2>Animations</h2>
+        <h3>Code</h3>
+        <pre>
+            <code>
+                @keyframes slideAndFade {
+                    0% {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                    50% {
+                        transform: translateX(100px);
+                        opacity: 0.5;
+                    }
+                    100% {
+                        transform: translateX(200px);
+                        opacity: 1;
+                    }
+                }
+
+                .box-animation {
+                    width: 100px;
+                    height: 100px;
+                    background-color: green;
+                    animation-name: slideAndFade;
+                    animation-duration: 4s; /* Duration of the animation */
+                    animation-timing-function: ease; /* Speed curve of the animation */
+                    animation-delay: 1s; /* Delay before the animation starts */
+                    animation-iteration-count: infinite; /* Animation repeats infinitely */
+                    animation-direction: alternate; /* Animation direction alternates */
+                    animation-fill-mode: both; /* Element retains styles from both the start and end of the animation */
+                    animation-play-state: running; /* Animation is running */
+                }
+
+
+                &lt;div class="box-animation"&gt;&lt;/div&gt;
+            </code>
+        </pre>
+
+        <h3>Output</h3>
+        <div class="box-animation"></div>
     </main>
 
 
