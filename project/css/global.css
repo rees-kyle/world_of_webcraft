@@ -147,7 +147,7 @@
             background-color: #0f0f0f;
             left: 100%;
             width: max-content;
-            text-align: right;
+            text-align: left;
             padding-left: 3px;
             padding-right: 3px;
             padding-bottom: 3px;
@@ -160,8 +160,35 @@
                     /* show menu on hover */
         .menu > li:hover > .submenu {
             display: block;
+            animation: .3s ease slideup;
         }
 
         .submenu > li:hover > .submenu2 {
             display: block;
+            animation: .3s ease slideleft;
+        }
+
+                    /* animation keyframes for hover */
+        @keyframes slideup {
+            0% {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @keyframes slideleft {
+            0% {
+                opacity: 0;
+                transform: translateX(18px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: none;
+            }
         }
