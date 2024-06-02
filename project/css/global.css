@@ -165,8 +165,9 @@
 
         .submenu > li:hover > .submenu2 {
             display: block;
-            animation: .3s ease slideleft;
+            animation: .4s ease slideright;
         }
+
 
                     /* animation keyframes for hover */
         @keyframes slideup {
@@ -181,10 +182,10 @@
             }
         }
 
-        @keyframes slideleft {
+        @keyframes slideright {
             0% {
                 opacity: 0;
-                transform: translateX(18px);
+                transform: translateX(-25px);
             }
 
             100% {
