@@ -7,7 +7,7 @@
     <meta charset="UTF-8">  <!-- specifies character encoding, 'UTF-8' used internationally -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport config; responsive design, variosus devices -->
     <title>World of Webcraft - Project Overview</title> <!-- page title displayed in broswer, shared content and search engines -->
-
+    <link rel="stylesheet" href="project/css/global.css">
     <!-- additional head elements for stylesheets -->
 </head>
 
@@ -15,33 +15,39 @@
 <body>
     <!-- 'header' content (logo, nav) -->
     <header>
-        <p class="website-title">World of Webcraft</p>
+        <p id="website-title">World of Webcraft</p>
+    </header>
+
+    <!-- 'main' content -->
+    <main>
         <!-- navigation -->
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="/world_of_webcraft/index.html">Project Overview</a></li>
                 <!-- html -->
-                <li>HTML
-                    <ul>
+                <li><a href="#" style="color:#a0a0a0">HTML</a>
+                    <ul class="submenu">
                         <li><a href="project/html/html/markup.html">Markup</a></li>
                         <li><a href="project/html/html/links.html">Links</a></li>
                         <li><a href="project/html/html/multimedia.html">Multimedia</a></li>
-                        <li><a href="project/html/html/forms.html">Forms</a></li>
-                            <ul>
+                        <li><a href="project/html/html/forms.html">Forms</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/html/form_validation.html">Form Validation</a></li>
                             </ul>
+                        </li>
                         <li><a href="project/html/html/tables.html">Tables</a></li>
                     </ul>
                 </li>
                 <!-- css -->
-                <li>CSS
-                    <ul>
+                <li><a href="#" style="color:#a0a0a0">CSS</a>
+                    <ul class="submenu">
                         <li><a href="project/html/css/selectors.html">Selectors</a></li>
                         <li><a href="project/html/css/box_model.html">Box Model</a></li>
-                        <li><a href="project/html/css/layout.html">Layout</a></li>
-                            <ul>
+                        <li><a href="project/html/css/layout.html">Layout</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/css/float_and_clear_properties.html">Float and Clear Properties</a></li>
                             </ul>
+                        </li>
                         <li><a href="project/html/css/typography.html">Typography</a></li>
                         <li><a href="project/html/css/colors_and_backgrounds.html">Colors and Backgrounds</a></li>
                         <li><a href="project/html/css/flexbox.html">Flexbox</a></li>
@@ -50,48 +56,48 @@
                         <li><a href="project/html/css/responsive_web_design.html">Responsive Web Design</a></li>
                     </ul>
                 <!-- javascript -->
-                <li>JavaScript
-                    <ul>
-                        <li>Basics
-                            <ul>
+                <li><a href="#" style="color:#a0a0a0">JavaScript</a>
+                    <ul class="submenu">
+                        <li><a href="#" style="color:#a0a0a0">Basics</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/basics/variables.html">Variables</a></li>
                                 <li><a href="project/html/js/basics/data_types.html">Data Types</a></li>
                                 <li><a href="project/html/js/basics/operators.html">Operators</a></li>
                                 <li><a href="project/html/js/basics/control_flow.html">Control Flow</a></li>
                             </ul>
                         </li>
-                        <li>Functions
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">Functions</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/functions/declaration_vs_expression.html">Declaration Vs Expression</a></li>
                                 <li><a href="project/html/js/functions/parameters_and_arguements.html">Parameters and Arguments</a></li>
                                 <li><a href="project/html/js/functions/return_statements.html">Return Statements</a></li>
                                 <li><a href="project/html/js/functions/arrow_functions.html">Arrow Functions</a></li>
                             </ul>
                         </li>
-                        <li>Arrays and Objects
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">Arrays and Objects</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/arrays_and_objects/array_methods.html">Array Methods</a></li>
                                 <li><a href="project/html/js/arrays_and_objects/object_properties_and_methods.html">Object Properties and Methods</a></li>
                                 <li><a href="project/html/js/arrays_and_objects/javascript_object_notation.html">JavaScript Object Notation</a></li>
                             </ul>
                         </li>
-                        <li>DOM Manipulation
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">DOM Manipulation</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/dom_manipulation/accessing_and_modifying_html_elements.html">Accessing and Modifying HTML Elements</a></li>
                                 <li><a href="project/html/js/dom_manipulation/event_handling.html">Event Handling</a></li>
                                 <li><a href="project/html/js/dom_manipulation/css_styles.html">CSS Styles</a></li>
                                 <li><a href="project/html/js/dom_manipulation/creating_and_removing_elements.html">Creating and Removing Elements</a></li>
                             </ul>
                         </li>
-                        <li>Asynchronous JavaScript
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">Asynchronous JavaScript</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/asynchronous_javascript/callback_functions.html">Callback Functions</a></li>
                                 <li><a href="project/html/js/asynchronous_javascript/promises.html">Promises</a></li>
                                 <li><a href="project/html/js/asynchronous_javascript/async_and_await.html">Async and Await</a></li>
                             </ul>
                         </li>
-                        <li>ES6+ Features
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">ES6+ Features</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/es6-plus_features/template_literals.html">Template Literals</a></li>
                                 <li><a href="project/html/js/es6-plus_features/destructing.html">Destructing</a></li>
                                 <li><a href="project/html/js/es6-plus_features/spread_and_rest_operators.html">Spread and Rest Operators</a></li>
@@ -99,48 +105,48 @@
                                 <li><a href="project/html/js/es6-plus_features/modules.html">Modules</a></li>
                             </ul>
                         </li>
-                        <li>Error Handling
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">Error Handling</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/error_handling/error_objects.html">Error Objects</a></li>
                                 <li><a href="project/html/js/error_handling/try_catch_statements.html">'try...catch' Statements</a></li>
                             </ul>
                         </li>
-                        <li>Browser APIs
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">Browser APIs</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/browser_apis/local_storage.html">Local Storage</a></li>
                                 <li><a href="project/html/js/browser_apis/fetch_api.html">Fetch API</a></li>
                                 <li><a href="project/html/js/browser_apis/geolocation_api.html">Geolocation API</a></li>
                                 <li><a href="project/html/js/browser_apis/canvas_api.html">Canvas API</a></li>
                             </ul>
                         </li>
-                        <li>Testing
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">Testing</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/testing/unit_testing.html">Unit Testing</a></li>
                                 <li><a href="project/html/js/testing/end-to-end_testing.html">End-to-End Testing</a></li>
                             </ul>
                         </li>
-                        <li>Security
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">Security</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/security/xss.html">Cross-Site Scripting (XSS) Prevention</a></li>
                                 <li><a href="project/html/js/security/cors.html">Cross-Origin Resource Sharing (CORS)</a></li>
                                 <li><a href="project/html/js/security/csp.html">Content Security Policy (CSP)</a></li>
                             </ul>
                         </li>
-                        <li>Performance Optimization
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">Performance Optimization</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/performance_optimization/minification.html">Minification</a></li>
                                 <li><a href="project/html/js/performance_optimization/code_splitting.html">Code Splitting</a></li>
                             </ul>
                         </li>
-                        <li>Server Side
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">Server Side</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/server_side/node-dot-js.html">Node.js</a></li>
                                 <li><a href="project/html/js/server_side/express-dot-js.html">Express.js</a></li>
                                 <li><a href="project/html/js/server_side/restful_apis.html">RESTful APIs</a></li>
                             </ul>
                         </li>
-                        <li>Database Integration
-                            <ul>
+                        <li><a href="#" style="color:#a0a0a0">Database Integration</a>
+                            <ul class="submenu2">
                                 <li><a href="project/html/js/database_integration/mongodb.html">MongoDB</a></li>
                                 <li><a href="project/html/js/database_integration/mysql.html">MySQL</a></li>
                                 <li><a href="project/html/js/database_integration/tbc.html">to be continued...</a></li>
@@ -150,10 +156,8 @@
                 </li>
             </ul>
         </nav>
-    </header>
 
-    <!-- 'main' content -->
-    <main>
+        <!-- content -->
         <h1>Project Overview</h1>
         <p>
             World of Webcraft is a personal showcase project designed to demonstrate and solidify my understanding of HTML,
@@ -168,7 +172,7 @@
 
     <!-- 'footer' for copyright information -->
     <footer>
-        <p>&copy;2024 World of Webcraft. All rights reserved.</p>
+        <p id="footer">&copy;2024 World of Webcraft. All rights reserved.</p>
     </footer>
 
     <!-- additional scripts go here -->
