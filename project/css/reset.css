@@ -1,0 +1,18 @@
+/* Ensure the html and body elements occupy the full height of the viewport */
+html, body {
+    height: 100%;
+}
+
+
+/* Add a CSS reset to remove default browser styles and ensure consistency across browsers */
+* {
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+
+/* Remove default list styles from all unordered lists */
+ul {
+    list-style: none;
+}
