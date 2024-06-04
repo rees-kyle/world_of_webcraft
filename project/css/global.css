@@ -66,6 +66,14 @@ p {
 }
 
 
+/* container */
+.container {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
 /* text-align right */
 .right-align {
     text-align: right;
