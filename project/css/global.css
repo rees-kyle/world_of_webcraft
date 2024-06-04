@@ -169,12 +169,12 @@ nav a:hover {
                 /* show menu on hover */
 .menu > li:hover > .submenu {
     display: block;
-    animation: .3s ease slideup;
+    animation: .1s ease slideup;
 }
 
 .submenu > li:hover > .submenu2 {
     display: block;
-    animation: .4s ease slideright;
+    animation: .1s ease slideright;
 }
 
 
