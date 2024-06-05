@@ -259,7 +259,7 @@ nav a:hover {
 
     .submenu {
         position: unset;
-        width: 10rem;
+        width: 12.5rem;
         padding-bottom: 2.5rem;
     }
 
@@ -267,7 +267,7 @@ nav a:hover {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        width: 8rem;
+        width: 10.75rem;
         display: none;
         position: absolute; /* Position relative to parent submenu item */
         left: 100%; /* Position to the right of the parent 'submenu' */
