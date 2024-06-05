@@ -72,6 +72,7 @@ small {
 
 /* website title */
 #website-title {
+    background-color: #0f0f0f;
     padding: 1.5rem;
     font-size: 2.5rem;
     text-align: center;
