@@ -220,59 +220,59 @@
                     It adjusts the layout and content automatically to fit different screen sizes.
                 </p>
                 <h2>Code</h2>
-                <pre>
+                <pre class="container">
                     <code>
-                        /* desktop */
-                        .container {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            padding: 20px;
-                        }
+/* desktop */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
 
-                        .content {
-                            flex: 3;
-                            padding: 20px;
-                        }
+.content {
+    flex: 3;
+    padding: 20px;
+}
 
-                        footer {
-                            background-color: #333;
-                            color: white;
-                            text-align: center;
-                            padding: 10px 0;
-                            position: static;
-                            width: 100%;
-                        }
-
-
-                        /* tablet */
-                        @media (max-width: 900px) {
-                            /* stack content vertically */
-                            .container {
-                                flex-direction: column;
-                            }
-
-                            /* fix footer at the bottom of the viewport */
-                            footer {
-                                position: fixed;
-                                bottom: 0;
-                                width: 100%;
-                            }
-                        }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    width: 100%;
+}
 
 
-                        /* mobile */
-                        @media (max-width: 600px) {
-                            /* hide navigation on mobile for simplicity */
-                            nav {
-                                display: none;
-                            }
+/* tablet */
+@media (max-width: 900px) {
+    /* stack content vertically */
+    .container {
+        flex-direction: column;
+    }
 
-                            /* adjust padding for content */
-                            .content {
-                                padding: 15px;
-                            }
-                        }
+    /* fix footer at the bottom of the viewport */
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+
+/* mobile */
+@media (max-width: 600px) {
+    /* hide navigation on mobile for simplicity */
+    nav {
+        display: none;
+    }
+
+    /* adjust padding for content */
+    .content {
+        padding: 15px;
+    }
+}
                     </code>
                 </pre>
             </div>
