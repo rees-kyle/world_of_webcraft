@@ -97,11 +97,36 @@ small {
 
 /* horizontal lines */
 hr {
-    border: none;                   /* Removes the default border */
-    height: 30px;                    /* Sets the height of the line */
-    background: none;               /* Removes the background color */
+    border: none;                           /* removes the default border */
+    height: 30px;                           /* sets the height of the line */
+    background: none;                       /* removes the background color */
     border-top: .25rem dashed #e0e0e0;
     margin: 20px 0;
+}
+
+
+dl {
+    color: black;
+    margin-bottom: 20px; /* adds spacing below the definition list */
+    border: 1px solid black;
+    padding: 30px;           /* adds padding inside the border */
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);   /* shadow*/
+    width: max-content;
+}
+
+dd, dt {
+    padding: 5px 0; /* adds padding above and below terms and descriptions */
+}
+
+dt {
+    font-weight: bold;    /* makes the term bold */
+
+}
+
+dd {
+    margin-bottom: 1rem;    /* adds spacing below each description */
+    word-wrap: break-word;  /* breaks long words to prevent overflow */
 }
 
 
@@ -305,8 +330,8 @@ nav a:hover {
         margin: 0;
         width: 10.75rem;
         display: none;
-        position: absolute; /* Position relative to parent submenu item */
-        left: 100%; /* Position to the right of the parent 'submenu' */
+        position: absolute; /* position relative to parent submenu item */
+        left: 100%; /* position to the right of the parent 'submenu' */
         top: 0;
     }
 
