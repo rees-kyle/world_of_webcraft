@@ -236,6 +236,7 @@ video {
 
 input[type="checkbox"] {
     height: 1.5rem;
+    accent-color: green;
 }
 
 .checkbox-label {
