@@ -220,6 +220,33 @@ video {
 }
 
 
+/* container for the checkbox */
+.checkbox-container {
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 13rem;
+}
+
+.checkbox-container p {
+    position: relative;
+    font-weight: bold;
+    top: 2rem;
+}
+
+input[type="checkbox"] {
+    height: 1.5rem;
+}
+
+.checkbox-label {
+    position: relative;
+    font-size: 1rem;
+    color: #e0e0e0;
+    padding-right: 1rem;
+    top: 1.5rem;
+}
+
+
 /* code snippets */
 code {
     background-color: rgba(0, 0, 0, 0.889);
