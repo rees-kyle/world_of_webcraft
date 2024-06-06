@@ -220,7 +220,7 @@ video {
 }
 
 
-/* container for the checkbox */
+/* checkboxes */
 .checkbox-container {
     padding-bottom: 2.5rem;
     display: flex;
@@ -232,6 +232,8 @@ video {
     position: relative;
     font-weight: bold;
     top: 2rem;
+    margin-bottom: 1rem;
+    left: -1rem;
 }
 
 input[type="checkbox"] {
@@ -240,6 +242,37 @@ input[type="checkbox"] {
 }
 
 .checkbox-label {
+    position: relative;
+    font-size: 1rem;
+    color: #e0e0e0;
+    padding-right: 1rem;
+    top: 1.5rem;
+}
+
+
+/* radio buttons */
+.radio-container {
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+}
+
+.radio-container p {
+    position: relative;
+    font-weight: bold;
+    top: 2rem;
+    margin-bottom: 1rem;
+    left: -1rem;
+}
+
+input[type="radio"] {
+    height: 1.5rem;
+    width: 7rem;
+    accent-color: green; /* For changing the color of the radio button */
+}
+
+.radio-label {
     position: relative;
     font-size: 1rem;
     color: #e0e0e0;
