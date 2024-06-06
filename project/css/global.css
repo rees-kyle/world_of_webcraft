@@ -147,6 +147,15 @@ a:visited {
 }
 
 
+/* audio */
+audio {
+    display: block;
+    margin: 0 auto;       /* centers the block element */
+    width: 100%;          /* ensures the audio element takes up the full width of its container */
+    max-width: 600px;     /* sets maximum width for the audio element */
+}
+
+
 /* images */
 img {
     max-width: 100%;                                                /* ensures the image scales down to fit the container */
