@@ -247,6 +247,38 @@ input[type="checkbox"] {
 }
 
 
+/* container for input*/
+.input-container {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
+
+/* text input */
+input[type="text"] {
+    width: 100%;
+    max-width: 15rem;
+    padding: .75rem;
+    border: 0.09375rem solid #000000;
+    box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.text-label {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+}
+
+
 /* code snippets */
 code {
     background-color: rgba(0, 0, 0, 0.889);
