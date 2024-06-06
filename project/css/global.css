@@ -281,6 +281,46 @@ input[type="radio"] {
 }
 
 
+/* select dropdown */
+.select-container {
+    margin-top: .25rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.select-container p {
+    position: relative;
+    font-weight: bold;
+    top: 2rem;
+    margin-bottom: 1.5rem;
+    left: -1rem;
+}
+
+select {
+    padding: 1.25rem;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: #000000;
+    color: rgb(214, 214, 214);
+    font-size: 1rem;
+    font-weight: bold;
+    width: 12.5rem;
+    box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
+}
+
+select option {
+    background-color: #000000; /* Set background color */
+    color: #ffffff; /* Set text color */
+    font-size: 1.25rem; /* Set font size */
+}
+
+select:hover,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+}
+
+
 /* container for input*/
 .input-container {
     margin-top: 2.5rem;
