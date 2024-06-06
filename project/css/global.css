@@ -378,6 +378,42 @@ input[type="password"]:focus {
 }
 
 
+/* textarea */
+.textarea-container {
+    margin-top: .25rem;
+    margin-bottom: 3rem;
+    max-width: 40rem;
+}
+
+.textarea-container p {
+    position: relative;
+    font-weight: bold;
+    top: 2rem;
+    margin-bottom: 1.5rem;
+    left: -1rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0.09375rem solid #000000;
+    box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    font-size: 1.25rem;
+    min-height: 10rem;
+    max-height: 20rem;
+    resize: vertical;
+}
+
+textarea:hover,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+}
+
+
 /* code snippets */
 code {
     background-color: rgba(0, 0, 0, 0.889);
