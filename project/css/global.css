@@ -104,11 +104,11 @@ img {
 }
 
 
-/* Style for <code> tags inside <pre> */
+/* code snippets */
 code {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.889);
     padding: 10px;
-    border: 10px solid #0f0f0f;
+    border: 10px solid black;
     border-radius: 4px;
     overflow: auto;
     display: block;
@@ -116,6 +116,8 @@ code {
     font-family: monospace;
     font-size: 1rem;
     font-weight: bold;
+    margin-left: 3rem;
+    box-shadow: 0 0 50px rgba(133, 252, 127, 0.3)
 }
 
 
@@ -304,6 +306,7 @@ nav a:hover {
     }
 
     code {
-        font-size: 1.125rem
+        font-size: 1.125rem;
+        margin-left: unset;
     }
 }
