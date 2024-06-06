@@ -95,6 +95,16 @@ small {
 }
 
 
+/* horizontal lines */
+hr {
+    border: none;                   /* Removes the default border */
+    height: 30px;                    /* Sets the height of the line */
+    background: none;               /* Removes the background color */
+    border-top: .25rem dashed #e0e0e0;
+    margin: 20px 0;
+}
+
+
 /* images */
 img {
     max-width: 100%;                                                /* ensures the image scales down to fit the container */
