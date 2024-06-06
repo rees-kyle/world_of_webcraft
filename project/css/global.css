@@ -95,6 +95,15 @@ small {
 }
 
 
+/* images */
+img {
+    max-width: 100%;                                                /* ensures the image scales down to fit the container */
+    height: auto;                                                   /* maintains aspect ratio */
+    border: 0.09375rem solid #000000;
+    box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);   /* shadow*/
+}
+
+
 /* Style for <code> tags inside <pre> */
 code {
     background-color: black;
