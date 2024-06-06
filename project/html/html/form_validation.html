@@ -175,35 +175,43 @@
             <h4>Code</h4>
             <pre class="container">
                 <code>
-&lt;p&gt;Postcode:&lt;/p&gt;
-&lt;input 
-    type="text" 
-    name="postcode" 
-    pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]?\s[0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}"
-    title="Enter a valid UK postcode."
-    placeholder="e.g. AB1 2CD"
-&gt;
+&lt;div class="container&gt;
+    &lt;div class="pattern-container"&gt;
+        &lt;p&gt;Postcode:&lt;/p&gt;
+        &lt;input 
+            type="text" 
+            name="postcode" 
+            pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]?\s[0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}"
+            title="Enter a valid UK postcode."
+            placeholder="e.g. AB1 2CD"
+        &gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                 </code>
             </pre>
 
             <h4>Output</h4>
-            <p>Postcode:</p>
-            <input 
-                type="text" 
-                name="postcode" 
-                pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]?\s[0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}"
-                title="Enter a valid UK postcode."
-                placeholder="e.g. AB1 2CD"
-            >
-            <!--
-            regex pattern:
-            [A-Za-z]{1,2}                       Matches one or two letters (area code)
-            [0-9Rr]                             Matches one digit or the letter R/r (district code)
-            [0-9A-Za-z]?                        Optionally matches one digit or letter (sector)
-            \s                                  Matches a single whitespace character (optional space)
-            [0-9]                               Matches one digit (unit)
-            [ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}   Matches two letters (unit)
-            -->
+            <div class="container">
+                <div class="pattern-container">
+                <p>Postcode:</p>
+                <input 
+                    type="text" 
+                    name="postcode" 
+                    pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]?\s[0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}"
+                    title="Enter a valid UK postcode."
+                    placeholder="e.g. AB1 2CD"
+                >
+                <!--
+                regex pattern:
+                [A-Za-z]{1,2}                       Matches one or two letters (area code)
+                [0-9Rr]                             Matches one digit or the letter R/r (district code)
+                [0-9A-Za-z]?                        Optionally matches one digit or letter (sector)
+                \s                                  Matches a single whitespace character (optional space)
+                [0-9]                               Matches one digit (unit)
+                [ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}   Matches two letters (unit)
+                -->
+                </div>
+            </div>
 
             <!-- min and max -->
             <h3>Min and Max</h3>
@@ -211,14 +219,22 @@
             <h4>Code</h4>
             <pre class="container">
                 <code>
-&lt;p&gt;Age:&lt;/p&gt;
-&lt;input type="number" name="age" min="18" max="123"&gt;
+&lt;div class="container"&gt;
+    &lt;div class="input-container"&gt;
+        &lt;lable for="age" class="age-label"&gt;Age:&lt;/lable&gt;
+        &lt;input type="number" name="age" min="18" max="123"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                 </code>
             </pre>
 
             <h4>Output</h4>
-            <p>Age:</p>
-            <input type="number" name="age" min="18" max="123">
+            <div class="container">
+                <div class="input-container">
+                    <lable for="age" class="age-label">Age:</lable>
+                    <input type="number" name="age" min="18" max="123">
+                </div>
+            </div>
 
             <!-- length -->
             <h3>Length</h3>
@@ -232,12 +248,20 @@
             </pre>
 
             <h4>Output</h4>
-            <p>Username:</p>
-            <input type="text" name="username" minlength="3" maxlength="12">
-            
+            <div class="container">
+                <div class="input-container">
+                    <lable for="username" class="text-label">Username:</lable>
+                    <input type="text" name="username" minlength="3" maxlength="12">
+                </div>
+            </div>
+
             <!-- submit button -->
             <h3>Submit Button</h3>
-            <p><button type="submit">Submit</button></p>
+            <div class="container">
+                <div class="submit-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
         </form>
     </main>
 

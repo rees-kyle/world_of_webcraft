@@ -171,14 +171,22 @@
             <h4>Code</h4>
             <pre class="container">
                 <code>
-&lt;lable for="username"&gt;Username:&lt;/lable&gt;
-&lt;input type="text" id="username" name="username" required&gt;
+&lt;div class="container"&gt;
+    &lt;div class="input-container"&gt;
+        &lt;lable for="username"&gt;Username:&lt;/lable&gt;
+        &lt;input type="text" id="username" name="username" required&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                 </code>
             </pre>
 
             <h4>Output</h4>
-            <lable for="username">Username:</lable>
-            <input type="text" id="username" name="username" required>
+            <div class="container">
+                <div class="input-container">
+                    <lable for="username" class="text-label">Username:</lable>
+                    <input type="text" id="username" name="username" required>
+                </div>
+            </div>
 
             <!-- password input -->
             <h3>Password Input</h3>
@@ -186,14 +194,22 @@
             <h4>Code</h4>
             <pre class="container">
                 <code>
-&lt;lable for="password"&gt;Password:&lt;/lable&gt;
-&lt;input type="password" id="password" name="password" required&gt;
+&lt;div class="container"&gt;
+    &lt;div class="input-container"&gt;
+        &lt;lable for="password" class="password-label"&gt;Password:&lt;/lable&gt;
+        &lt;input type="password" id="password" name="password" required&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                 </code>
             </pre>
 
             <h4>Output</h4>
-            <lable for="password">Password:</lable>
-            <input type="password" id="password" name="password" required>
+            <div class="container">
+                <div class="input-container">
+                    <lable for="password" class="password-label">Password:</lable>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </div>
 
             <!-- radio buttons -->
             <h3>Radio Buttons</h3>
@@ -201,53 +217,65 @@
             <h4>Code</h4>
             <pre class="container">
                 <code>
-&lt;p&gt;Preferred mode of transportation:&lt;/p&gt;
-&lt;label for="car"&gt;Car&lt;/label&gt;
-&lt;input type="radio" id="car" name="transportation" value="car"&gt;
-&lt;label for="bike"&gt;Bike&lt;/label&gt;
-&lt;input type="radio" id="bike" name="transportation" value="bike"&gt;
-&lt;label for="walk"&gt;Walk&lt;/label&gt;
-&lt;input type="radio" id="walk" name="transportation" value="walk"&gt;
-&lt;label for="bus"&gt;Bus&lt;/label&gt;
-&lt;input type="radio" id="bus" name="transportation" value="bus"&gt;
+&lt;div class="radio-container"&gt;
+    &lt;p&gt;Preferred mode of transportation:&lt;/p&gt;
+    &lt;label for="car" class="radio-label"&gt;Car&lt;/label&gt;
+    &lt;input type="radio" id="car" name="transportation" value="car"&gt;
+    &lt;label for="bike" class="radio-label"&gt;Bike&lt;/label&gt;
+    &lt;input type="radio" id="bike" name="transportation" value="bike"&gt;
+    &lt;label for="walk" class="radio-label"&gt;Walk&lt;/label&gt;
+    &lt;input type="radio" id="walk" name="transportation" value="walk"&gt;
+    &lt;label for="bus" class="radio-label"&gt;Bus&lt;/label&gt;
+    &lt;input type="radio" id="bus" name="transportation" value="bus"&gt;
+&lt;/div&gt;
                 </code>
             </pre>
 
             <h4>Output</h4>
-            <p>Preferred mode of transportation:</p>
-            <label for="car">Car</label>
-            <input type="radio" id="car" name="transportation" value="car">
-            <label for="bike">Bike</label>
-            <input type="radio" id="bike" name="transportation" value="bike">
-            <label for="walk">Walk</label>
-            <input type="radio" id="walk" name="transportation" value="walk">
-            <label for="bus">Bus</label>
-            <input type="radio" id="bus" name="transportation" value="bus">
+            <div class="container">
+                <div class="radio-container">
+                    <p>Preferred mode of transportation:</p>
+                    <label for="car" class="radio-label">Car</label>
+                    <input type="radio" id="car" name="transportation" value="car">
+                    <label for="bike" class="radio-label">Bike</label>
+                    <input type="radio" id="bike" name="transportation" value="bike">
+                    <label for="walk" class="radio-label">Walk</label>
+                    <input type="radio" id="walk" name="transportation" value="walk">
+                    <label for="bus" class="radio-label">Bus</label>
+                    <input type="radio" id="bus" name="transportation" value="bus">
+                </div>  
+            </div>
 
             <!-- checkbox -->
             <h3>Checkbox</h3>
 
             <h4>Code</h4>
             <pre class="container">
-                <code>
-&lt;p&gt;Hobbies:&lt;/p&gt;
-&lt;label for="reading"&gt;Reading&lt;/label&gt;
-&lt;input type="checkbox" id="reading" name="hobbies" value="reading"&gt;
-&lt;label for="traveling"&gt;Traveling&lt;/label&gt;
-&lt;input type="checkbox" id="traveling" name="hobbies" value="traveling"&gt;
-&lt;label for="cooking"&gt;Cooking&lt;/label&gt;
-&lt;input type="checkbox" id="cooking" name="hobbies" value="cooking"&gt;
+                    <code>
+&lt;div class="checkbox-container"&gt;
+    &lt;p&gt;Hobbies:&lt;/p&gt;
+    &lt;label for="reading" class="checkbox-label"&gt;Reading&lt;/label&gt;
+    &lt;input type="checkbox" id="reading" name="hobbies" value="reading"&gt;
+    &lt;label for="traveling" class="checkbox-label"&gt;Traveling&lt;/label&gt;
+    &lt;input type="checkbox" id="traveling" name="hobbies" value="traveling"&gt;
+    &lt;label for="cooking" class="checkbox-label"&gt;Cooking&lt;/label&gt;
+    &lt;input type="checkbox" id="cooking" name="hobbies" value="cooking"&gt;
+&lt;/div&gt;
                 </code>
             </pre>
 
             <h4>Output</h4>
-            <p>Hobbies:</p>
-            <label for="reading">Reading</label>
-            <input type="checkbox" id="reading" name="hobbies" value="reading">
-            <label for="traveling">Traveling</label>
-            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
-            <label for="cooking">Cooking</label>
-            <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+            <div class="container">
+                <div class="checkbox-container">
+                    <p>Hobbies:</p>
+                    <label for="reading" class="checkbox-label">Reading</label>
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="traveling" class="checkbox-label">Traveling</label>
+                    <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                    <label for="cooking" class="checkbox-label">Cooking</label>
+                    <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+                </div>
+            </div>
 
             <!-- select dropdown -->
             <h3>Select Dropdown</h3>
@@ -255,22 +283,28 @@
             <h4>Code</h4>
             <pre class="container">
                 <code>
-&lt;p&gt;Country:&lt;/p&gt;
-&lt;select name="country"&gt;
-    &lt;option value="usa"&gt;United States&lt;/option&gt;
-    &lt;option value="canada"&gt;Canada&lt;/option&gt;
-    &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
-&lt;/select&gt;
+&lt;div class="select-container"&gt;
+    &lt;p&gt;Country:&lt;/p&gt;
+    &lt;select name="country"&gt;
+        &lt;option value="usa"&gt;United States&lt;/option&gt;
+        &lt;option value="canada"&gt;Canada&lt;/option&gt;
+        &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
                 </code>
             </pre>
 
             <h4>Output</h4>
-            <p>Country:</p>
-            <select name="country">
-                <option value="usa">United States</option>
-                <option value="canada">Canada</option>
-                <option value="uk">United Kingdom</option>
-            </select>
+            <div class="container">
+                <div class="select-container">
+                    <p>Country:</p>
+                    <select name="country">
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                    </select>
+                </div>
+            </div>
 
             <!-- textarea -->
             <h3>Textarea</h3>
@@ -278,14 +312,22 @@
             <h4>Code</h4>
             <pre class="container">
                 <code>
-&lt;p&gt;Comments:&lt;/p&gt;
-&lt;textarea id="comments" name="comments" rows="4" cols="50"&gt;&lt;/textarea&gt;
+&lt;div class="container"&gt;
+    &lt;div class="textarea-container"&gt;
+        &lt;p&gt;Comments:&lt;/p&gt;
+        &lt;textarea id="comments" name="comments" rows="4" cols="50"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                 </code>
             </pre>
 
             <h4>Output</h4>
-            <p>Comments:</p>
-            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <div class="container">
+                <div class="textarea-container">
+                    <p>Comments:</p>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                </div>
+            </div>
 
             <!-- submit button -->
             <h3>Submit Button</h3>
@@ -293,12 +335,20 @@
             <h4>Code</h4>
             <pre class="container">
                 <code>
-&lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;div class="container"&gt;
+    &lt;div class="submit-container"&gt;
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                 </code>
             </pre>
 
             <h4>Output</h4>
-            <button type="submit">Submit</button>
+            <div class="container">
+                <div class="submit-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
         </form>
     </main>
 
