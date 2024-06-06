@@ -130,6 +130,53 @@ dd {
 }
 
 
+/* tables */
+.table-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    width: 100%;
+    overflow-x:auto;
+}
+
+table {
+    margin: 0 auto;
+    max-width: 50rem;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: rgb(25, 124, 25);
+    color: #e0e0e0;
+    text-align: center;
+}
+
+td {
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.235);
+}
+
+tr:hover {
+    background-color: rgba(154, 252, 255, 0.346);
+}
+
+
 /* links */
 a {
     color: #5e79ff;
