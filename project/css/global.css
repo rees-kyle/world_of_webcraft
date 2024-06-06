@@ -130,6 +130,23 @@ dd {
 }
 
 
+/* links */
+a {
+    color: #5e79ff;
+    text-decoration: none; /* removes underline */
+    transition: color 0.3s ease; /* smooth transition */
+}
+
+a:hover {
+    color: #4afffc;
+    text-decoration: underline; /* adds underline on hover */
+}
+
+a:visited {
+    color: rgb(195, 136, 253);
+}
+
+
 /* images */
 img {
     max-width: 100%;                                                /* ensures the image scales down to fit the container */
