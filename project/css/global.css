@@ -414,6 +414,22 @@ textarea:focus {
 }
 
 
+/* pattern */
+.pattern-container {
+    margin-top: .25rem;
+    margin-bottom: 3rem;
+    max-width: 40rem;
+}
+
+.pattern-container p {
+    position: relative;
+    font-weight: bold;
+    top: 2rem;
+    margin-bottom: 1.5rem;
+    left: -1rem;
+}
+
+
 /* submit button */
 .submit-container {
     position: relative;
