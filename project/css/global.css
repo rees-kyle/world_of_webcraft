@@ -165,6 +165,18 @@ img {
 }
 
 
+/* videos */
+video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;          /* Ensures the video element takes up the full width of its container */
+    max-width: 800px;     /* Sets a maximum width for the video element */
+    border: 10px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.3)
+}
+
+
 /* code snippets */
 code {
     background-color: rgba(0, 0, 0, 0.889);
