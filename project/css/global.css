@@ -414,6 +414,37 @@ textarea:focus {
 }
 
 
+/* submit button */
+.submit-container {
+    position: relative;
+    font-weight: bold;
+    top: 2rem;
+    margin-bottom: 3rem;
+}
+
+button[type="submit"] {
+    padding: 1.25rem;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: #000000;
+    color: rgb(214, 214, 214);
+    font-size: 1rem;
+    font-weight: bold;
+    width: 10rem;
+    box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
+}
+
+button[type="submit"]:hover {
+    outline: none;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+}
+
+button[type="submit"]:active {
+    background-color: green;
+    box-shadow: 0.312rem 0.312rem 0.0312rem rgba(0, 0, 0, 0.5);
+}
+
+
 /* code snippets */
 code {
     background-color: rgba(0, 0, 0, 0.889);
