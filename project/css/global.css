@@ -201,6 +201,25 @@ video {
 }
 
 
+/* create a responsive spotify container */
+.spotify-container {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* ensure content inside respects the rounded corners */
+}
+
+/* style the iframe to fit within the container */
+.spotify-container iframe {
+    width: 100%;
+    height: 352;
+    border: none;
+    border-radius: 10px;
+}
+
+
 /* code snippets */
 code {
     background-color: rgba(0, 0, 0, 0.889);
