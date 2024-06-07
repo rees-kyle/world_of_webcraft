@@ -1,0 +1,54 @@
+.example-container {
+    white-space: nowrap;
+    width: 100%;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.block {
+    display: block;
+    width: 12.5rem;
+    height: 6.25rem;
+    background-color: green;
+    margin: 1.25rem auto;
+    text-align: center;
+    line-height: 6.25rem;
+    border: 0.09375rem solid #000000;
+}
+
+.inline {
+    display: inline-block;
+    background-color: green;
+    padding: 0.3125rem;
+    margin-right: 0.625rem;
+    border: 0.09375rem solid #000000;
+}
+
+.parent {
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: rgb(255, 255, 124);
+}
+
+.relative {
+    position: relative;
+    top: 3.125rem;
+    left: 1.875rem;
+    width: 6.25rem;
+    height: 6.25rem;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(255, 121, 121);
+    border: 0.09375rem solid #000000;
+}
+
+.absolute {
+    position: absolute;
+    width: 6.25rem;
+    height: 6.25rem;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(119, 255, 119);
+    border: 0.09375rem solid #000000;
+    box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
+}
