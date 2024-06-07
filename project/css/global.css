@@ -98,25 +98,25 @@ small {
 /* horizontal lines */
 hr {
     border: none;                           /* removes the default border */
-    height: 30px;                           /* sets the height of the line */
+    height: 1.875rem;                           /* sets the height of the line */
     background: none;                       /* removes the background color */
     border-top: .25rem dashed #e0e0e0;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 
 dl {
     color: black;
-    margin-bottom: 20px; /* adds spacing below the definition list */
-    border: 1px solid black;
-    padding: 30px;           /* adds padding inside the border */
+    margin-bottom: 1.25rem; /* adds spacing below the definition list */
+    border: .0625rem solid black;
+    padding: 1.875rem;           /* adds padding inside the border */
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);   /* shadow*/
     width: max-content;
 }
 
 dd, dt {
-    padding: 5px 0; /* adds padding above and below terms and descriptions */
+    padding: .3125rem 0; /* adds padding above and below terms and descriptions */
 }
 
 dt {
@@ -149,13 +149,13 @@ table {
     margin-bottom: 1rem;
     font-size: 1rem;
     background-color: #f9f9f9;
-    border: 2px solid black;
+    border: 0.125rem solid black;
     box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
 }
 
 th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: .625rem;
+    border: .0625rem solid #ddd;
 }
 
 th {
@@ -197,9 +197,9 @@ a:visited {
 /* audio */
 audio {
     display: block;
-    margin: 0 auto;       /* centers the block element */
-    width: 100%;          /* ensures the audio element takes up the full width of its container */
-    max-width: 600px;     /* sets maximum width for the audio element */
+    margin: 0 auto;         /* centers the block element */
+    width: 100%;            /* ensures the audio element takes up the full width of its container */
+    max-width: 37.5rem;     /* sets maximum width for the audio element */
 }
 
 
@@ -217,10 +217,10 @@ video {
     display: block;
     margin: 0 auto;
     width: 100%;          /* Ensures the video element takes up the full width of its container */
-    max-width: 800px;     /* Sets a maximum width for the video element */
-    border: 10px solid black;
-    border-radius: 4px;
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+    max-width: 50rem;     /* Sets a maximum width for the video element */
+    border: .625rem solid black;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 3.125rem rgba(255, 255, 255, 0.3);
 }
 
 
@@ -233,9 +233,9 @@ video {
     height: 0;
     overflow: hidden;
     max-width: 50%;
-    border: 10px solid black;
-    border-radius: 4px;
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+    border: .625rem solid black;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 3.125rem rgba(255, 255, 255, 0.3);
 }
 
 /* style the iframe to fit within the container */
@@ -250,10 +250,10 @@ video {
 
 /* create a responsive spotify container */
 .spotify-container {
-    max-width: 1200px;
+    max-width: 75rem;
     display: block;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: .625rem;
     box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.5);
     overflow: hidden; /* ensure content inside respects the rounded corners */
 }
@@ -263,7 +263,7 @@ video {
     width: 100%;
     height: 352;
     border: none;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 
@@ -345,8 +345,8 @@ input[type="radio"] {
 
 select {
     padding: 1.25rem;
-    border: 1px solid green;
-    border-radius: 5px;
+    border: .0625rem solid green;
+    border-radius: .3125rem;
     background-color: #000000;
     color: rgb(214, 214, 214);
     font-size: 1rem;
@@ -383,7 +383,7 @@ input[type="text"] {
     padding: .75rem;
     border: 0.09375rem solid #000000;
     box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     font-size: 1.2rem;
     color: black;
 }
@@ -403,8 +403,8 @@ input[type="text"]:focus {
 /* number input */
 input[type=number] {
     padding: 1.25rem;
-    border: 1px solid green;
-    border-radius: 5px;
+    border: .0625rem solid green;
+    border-radius: .3125rem;
     background-color: #000000;
     color: rgb(214, 214, 214);
     font-size: 1rem;
@@ -434,7 +434,7 @@ input[type="password"] {
     padding: .75rem;
     border: 0.09375rem solid #000000;
     box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
+    border-radius: 0.25rem;
     font-size: 1.2rem;
     color: black;
 }
@@ -469,10 +469,10 @@ input[type="password"]:focus {
 
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: .625rem;
     border: 0.09375rem solid #000000;
     box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: .3125rem;
     background-color: rgba(255, 255, 255, 0.8);
     color: #000000;
     font-size: 1.25rem;
@@ -514,8 +514,8 @@ textarea:focus {
 
 button[type="submit"] {
     padding: 1.25rem;
-    border: 1px solid green;
-    border-radius: 5px;
+    border: .0625rem solid green;
+    border-radius: .3125rem;
     background-color: #000000;
     color: rgb(214, 214, 214);
     font-size: 1rem;
@@ -538,9 +538,9 @@ button[type="submit"]:active {
 /* code snippets */
 code {
     background-color: rgba(0, 0, 0, 0.889);
-    padding: 10px;
-    border: 10px solid black;
-    border-radius: 4px;
+    padding: .625rem;
+    border: .625rem solid black;
+    border-radius: 0.25rem;
     overflow: auto;
     display: block;
     color: green;
@@ -548,7 +548,7 @@ code {
     font-size: 1rem;
     font-weight: bold;
     margin-left: 3rem;
-    box-shadow: 0 0 50px rgba(133, 252, 127, 0.3);
+    box-shadow: 0 0 3.125rem rgba(133, 252, 127, 0.3);
 }
 
 
@@ -603,7 +603,7 @@ nav a:hover {
 @keyframes slideright {
     0% {
         opacity: 0;
-        transform: translateX(-25px);
+        transform: translateX(-1.563rem);
     }
 
     100% {
@@ -645,7 +645,7 @@ nav a:hover {
 
 
 /* Adjustments for mobile */
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 45.5rem) {
     body {
         font-size: 1.125rem;
         line-height: 1.4;
