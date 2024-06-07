@@ -9,57 +9,7 @@
     <title>World of Webcraft - Layout</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/global.css">
-    <style>
-        .block {
-            display: block;
-            width: 200px;
-            height: 100px;
-            background-color: green;
-            margin: 20px auto;
-            text-align: center;
-            line-height: 100px;
-        }
-
-        .inline {
-        display: inline;
-        background-color: green;
-        padding: 5px;
-        margin-right: 10px;
-        }
-
-        .container {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            background-color: lightblue;
-            border: 1px solid #000;
-            margin-bottom: 20px;
-        }
-
-        .parent {
-            width: 200px;
-            height: 200px;
-            background-color: yellow;
-        }
-
-        .relative {
-            position: relative;
-            top: 50px;
-            left: 30px;
-            width: 100px;
-            height: 100px;
-            background-color: lightcoral;
-        }
-
-        .absolute {
-            position: absolute;
-            top: 50px;
-            right: 20px;
-            width: 100px;
-            height: 100px;
-            background-color: lightgreen;
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/css/layout.css">
 </head>
 
 <!-- 'body' section for page content -->
@@ -218,7 +168,9 @@
         <h3>Display</h3>
         <p>Determines how an element is displayed on the page.</p>
 
-        <h4>Code</h4>
+            <!-- block -->
+        <h4>Block</h4>
+        <h5>Code</h5>
         <pre class="container">
             <code>
 .block {
@@ -229,39 +181,59 @@
     margin: 20px auto;
     text-align: center;
     line-height: 100px;
+    border: 0.09375rem solid #000000;
 }
 
-&lt;div class="block"&gt;Block Element 1&lt;/div&gt;
-&lt;div class="block"&gt;Block Element 2&lt;/div&gt;
-&lt;div class="block"&gt;Block Element 3&lt;/div&gt;
+&lt;div class="container"&gt;
+    &lt;div class="example-container"&gt;
+        &lt;div class="block"&gt;Block Element 1&lt;/div&gt;
+        &lt;div class="block"&gt;Block Element 2&lt;/div&gt;
+        &lt;div class="block"&gt;Block Element 3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
             </code>
         </pre>
 
-        <h4>Output</h4>
-        <div class="block">Block Element 1</div>
-        <div class="block">Block Element 2</div>
-        <div class="block">Block Element 3</div>
+        <h5>Output</h5>
+        <div class="container">
+            <div class="example-container">
+                <div class="block">Block Element 1</div>
+                <div class="block">Block Element 2</div>
+                <div class="block">Block Element 3</div>
+            </div>
+        </div>
 
-        <h4>Code</h4>
+            <!-- inline -->
+        <h4>Inline</h4>
+        <h5>Code</h5>
         <pre class="container">
             <code>
 .inline {
-    display: inline;
+    display: inline-block;
     background-color: green;
     padding: 5px;
     margin-right: 10px;
+    border: 0.09375rem solid #000000;
 }
 
-&lt;span class="inline"&gt;Inline Element 1&lt;/span&gt;
-&lt;span class="inline"&gt;Inline Element 2&lt;/span&gt;
-&lt;span class="inline"&gt;Inline Element 3&lt;/span&gt;
+&lt;div class="container"&gt;
+    &lt;div class="example-container"&gt;
+        &lt;span class="inline"&gt;Inline Element 1&lt;/span&gt;
+        &lt;span class="inline"&gt;Inline Element 2&lt;/span&gt;
+        &lt;span class="inline"&gt;Inline Element 3&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
             </code>
         </pre>
 
-        <h4>Output</h4>
-        <span class="inline">Inline Element 1</span>
-        <span class="inline">Inline Element 2</span>
-        <span class="inline">Inline Element 3</span>
+        <h5>Output</h5>
+        <div class="container">
+            <div class="example-container">
+                <span class="inline">Inline Element 1</span>
+                <span class="inline">Inline Element 2</span>
+                <span class="inline">Inline Element 3</span>
+            </div>
+        </div>
 
         <!-- position -->
         <h3>Position</h3>
@@ -272,19 +244,10 @@
         <h5>Code</h5>
         <pre class="container">
             <code>
-.container {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    background-color: lightblue;
-    border: 1px solid #000;
-    margin-bottom: 20px;
-}
-
 .parent {
     width: 200px;
     height: 200px;
-    background-color: yellow;
+    background-color: rgb(255, 255, 124);
 }
 
 .relative {
@@ -293,13 +256,18 @@
     left: 30px;
     width: 100px;
     height: 100px;
-    background-color: lightcoral;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(255, 121, 121);
+    border: 0.09375rem solid #000000;
 }
 
 
 &lt;div class="container"&gt;
-    &lt;div class="parent"&gt;
-        &lt;div class="relative"&gt;Relative&lt;/div&gt;
+    &lt;div class="example-container"&gt;
+        &lt;div class="parent"&gt;
+            &lt;div class="relative"&gt;Relative&lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
             </code>
@@ -307,50 +275,61 @@
 
         <h5>Output</h5>
         <div class="container">
-            <div class="parent">
-                <div class="relative">Relative</div>
+            <div class="example-container">
+                <div class="parent">
+                    <div class="relative">Relative</div>
+                </div>
             </div>
         </div>
 
-        <ul>
-            <li>The child element moves relative to where it would normally be within the parent.</li>
-            <li>It still affects the layout of other elements within the parent.</li>
-        </ul>
+        <p>Element will be <strong>positioned relative to its</strong> <mark>original position</mark>.</p>
 
             <!-- absolute -->
         <h4>Absolute</h4>
         <h5>Code</h5>
         <pre class="container">
             <code>
-                .absolute {
-                    position: absolute;
-                    top: 50px;
-                    right: 20px;
-                    width: 100px;
-                    height: 100px;
-                    background-color: lightgreen;
-                }
+.parent {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 124);
+}
+
+.absolute {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(119, 255, 119);
+    border: 0.09375rem solid #000000;
+    box-shadow: 0.625rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.5);
+}
 
 
-                &lt;div class="container"&gt;
-                    &lt;div class="parent"&gt;
-                        &lt;div class="relative"&gt;Relative&lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+&lt;div class="container"&gt;
+    &lt;div class="example-container"&gt;
+        &lt;div class="parent"&gt;
+            &lt;div class="absolute"&gt;Absolute&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
             </code>
         </pre>
 
         <h5>Output</h5>
         <div class="container">
-            <div class="parent">
-                <div class="absolute">Absolute</div>
+            <div class="example-container">
+                <div class="parent">
+                    <div class="absolute">Absolute</div>
+                </div>
             </div>
         </div>
 
-        <ul>
-            <li>The child element is positioned relative to the .parent element.</li>
-            <li>It does not affect the layout of other elements within the parent, as it is taken out of the normal document flow.</li>
-        </ul>
+        <p>
+            Element will be <strong>positioned relative to</strong> the <mark>closest positioned ancestor</mark>
+            <strong>and</strong> is <mark>removed from</mark> the <mark>document flow</mark>.
+        </p>
     </main>
 
 
