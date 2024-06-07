@@ -1,0 +1,11 @@
+.box {
+    width: 100%;
+    max-width: 61rem;
+    padding: 1.25rem;
+    border: .3125rem solid darkgreen;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    font-size: 1.125rem;
+    font-family: monospace;
+}
