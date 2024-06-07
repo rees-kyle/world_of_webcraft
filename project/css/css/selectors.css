@@ -1,54 +1,16 @@
-/* selects all elements on page */
-* {
-    color: gray;
-}
-
-/* type (element) selector */
-p {
-    color: red;
-}
-
-/* class selector */
-.my-class {
-    text-decoration: underline;
-}
-
-/* id selector */
-#my-id {
-    font-style: italic;
-}
-
-/* attribute selector */
-input[type="text"] {
-    border: 1px solid black;        
-}
-
-/* descendant selector */
-div p {
-    background-color: green;
-}
-
-/* child selector */
-ul > li {
-    list-style-type: square;
-}
-
 /* adjacent sibling selector */
 h4 + p {
-    margin-top: 50px;
+    text-decoration: underline;
 }
 
 /* general sibling */
 h5 ~ p {
-    font-size: 32px;
-}
-
-/* pseudo-classes */
-a:hover {
-    color: blueviolet;
+    text-decoration: underline;
 }
 
 /* pseudo-elements */
-p::first-line {
-    text-transform: uppercase;
+.example::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: yellow;
 }

@@ -170,7 +170,9 @@
         <pre class="container">
             <code>
 * {
-    color: gray;
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
 }
             </code>
         </pre>
@@ -182,15 +184,13 @@
         <pre class="container">
             <code>
 p {
-    color: red;
+    font-size: 1rem;
+    padding: .625rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
 }
-
-&lt;p&gt;This is a paragraph.&lt;/p&gt;
             </code>
         </pre>
-
-        <h3>Output</h3>
-        <p>This is a paragraph.</p>
 
         <!-- class -->
         <h2>Class</h2>
@@ -198,16 +198,13 @@ p {
         <h3>Code</h3>
         <pre class="container">
             <code>
-.my-class {
-    text-decoration: underline;
+.text-label {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-right: 1rem;
 }
-
-&lt;p class="my-class"&gt;This is another paragraph.&lt;/p&gt;
             </code>
         </pre>
-
-        <h3>Output</h3>
-        <p class="my-class">This is another paragraph.</p>
 
         <!-- id -->
         <h2>ID</h2>
@@ -215,16 +212,12 @@ p {
         <h3>Code</h3>
         <pre class="container">
             <code>
-#my-id {
-    font-style: italic;
-}
-
-&lt;p id="my-id"&gt;This is a third paragraph.&lt;/p&gt;
+    #website-title {
+        padding: 1rem;
+        font-size: 1.75rem;
+    }
             </code>
         </pre>
-
-        <h3>Output</h3>
-        <p id="my-id">This is a third paragraph.</p>
 
         <!-- attribute -->
         <h2>Attribute</h2>
@@ -232,16 +225,13 @@ p {
         <h3>Code</h3>
         <pre class="container">
             <code>
-input[type="text"] {
-    border: 1px solid black;        
+input[type="radio"] {
+    height: 1.5rem;
+    width: 7rem;
+    accent-color: green;
 }
-
-&lt;input type="text" placeholder="Type something..."&gt;
             </code>
         </pre>
-
-        <h3>Output</h3>
-        <input type="text" placeholder="Type something...">
 
         <!-- descendant -->
         <h2>Descendant</h2>
@@ -249,20 +239,15 @@ input[type="text"] {
         <h3>Code</h3>
         <pre class="container">
             <code>
-div p {
-    background-color: green;
+.radio-container p {
+    position: relative;
+    font-weight: bold;
+    top: 2rem;
+    margin-bottom: 1rem;
+    left: -1rem;
 }
-
-&lt;div&gt;
-    &lt;p&gt;This paragraph is inside a div.&lt;/p&gt;
-&lt;/div&gt;
             </code>
         </pre>
-
-        <h3>Output</h3>
-        <div>
-            <p>This paragraph is inside a div.</p>
-        </div>
 
         <!-- child -->
         <h2>Child</h2>
@@ -270,22 +255,12 @@ div p {
         <h3>Code</h3>
         <pre class="container">
             <code>
-ul > li {
-    list-style-type: square;
+.menu > li, .menu > a {
+    display: inline-block;
+    padding-left: .625rem;
 }
-
-&lt;ul&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-&lt;/ul&gt;
             </code>
         </pre>
-
-        <h3>Output</h3>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-        </ul>
 
         <!-- adjacent sibling -->
         <h2>Adjacent Sibling</h2>
@@ -294,17 +269,31 @@ ul > li {
         <pre class="container">
             <code>
 h4 + p {
-    margin-top: 50px;
+    text-decoration: underline;
 }
 
-&lt;h4&gt;Fourth-Level Heading&lt;/h4&gt;
-&lt;p&gt;This paragraph is a sibling of a fourth-level heading.&lt;/p&gt;
+&lt;div class="container"&gt;
+    &lt;h4&gt;Fourth-Level Heading&lt;/h4&gt;
+    &lt;p&gt;
+        This paragraph is a sibling of a fourth-level heading.
+        The adjacent sibling combinator selects an element that is directly adjacent to another element.
+        In other words, it targets the immediate next sibling of a specified element.
+    &lt;/p&gt;
+    &lt;p&gt;The next element does not get styled.&lt;/p&gt;
+&lt;/div&gt;
             </code>
         </pre>
 
         <h3>Output</h3>
-        <h4>Fourth-Level Heading</h4>
-        <p>This paragraph is a sibling of a fourth-level heading.</p>
+        <div class="container">
+            <h4>Fourth-Level Heading</h4>
+            <p>
+                This paragraph is a sibling of a fourth-level heading.
+                The adjacent sibling combinator selects an element that is directly adjacent to another element.
+                In other words, it targets the immediate next sibling of a specified element.
+            </p>
+            <p>The next element does not get styled.</p>
+        </div>
 
         <!-- general sibling -->
         <h2>General Sibling</h2>
@@ -313,17 +302,31 @@ h4 + p {
         <pre class="container">
             <code>
 h5 ~ p {
-    font-size: 32px;
+    text-decoration: underline;
 }
 
-&lt;h5&gt;Fifth-Level Heading&lt;/h5&gt;
-&lt;p&gt;This paragraph is a general sibling of a fifth-level heading&lt;/p&gt;
+&lt;div class="container"&gt;
+    &lt;h5&gt;Fifth-Level Heading&lt;/h5&gt;
+    &lt;p&gt;
+        This paragraph is a general sibling of a fifth-level heading. 
+        The general sibling combinator selects all elements that are siblings of a specified element and come after it,
+        not necessarily immediately.
+    &lt;/p&gt;
+    &lt;p&gt;The next element also gets styled.&lt;/p&gt;
+&lt;/div&gt;
             </code>
         </pre>
 
         <h3>Output</h3>
-        <h5>Fifth-Level Heading</h5>
-        <p>This paragraph is a general sibling of a fifth-level heading</p>
+        <div class="container">
+            <h5>Fifth-Level Heading</h5>
+            <p>
+                This paragraph is a general sibling of a fifth-level heading. 
+                The general sibling combinator selects all elements that are siblings of a specified element and come after it,
+                not necessarily immediately.
+            </p>
+            <p>The next element also gets styled.</p>
+        </div>
 
         <!-- pseudo-classes -->
         <h2>Pseudo-classes</h2>
@@ -332,15 +335,11 @@ h5 ~ p {
         <pre class="container">
             <code>
 a:hover {
-    color: blueviolet;
+    color: #4afffc;
+    text-decoration: underline;
 }
-
-&lt;a href="#"&gt;Hover over me&lt;/a&gt;
             </code>
         </pre>
-
-        <h3>Output</h3>
-        <a href="#">Hover over me</a>
 
         <!-- pseudo-elements -->
         <h2>Pseudo-elements</h2>
@@ -348,14 +347,22 @@ a:hover {
         <h3>Code</h3>
         <pre class="container">
             <code>
-p::first-line {
-    text-transform: uppercase;
+.example::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: yellow;
 }
+
+&lt;div class="container&gt;
+    &lt;p class="example"&gt;This is an example paragraph.&lt;/p&gt;
+&lt;/div&gt;
             </code>
         </pre>
 
         <h3>Output</h3>
-        <p>This is a paragraph with multiple lines. It acts as a demonstration of the ::first-line pseudo-element.</p>
+        <div class="container">
+            <p class="example">This is an example paragraph.</p>
+        </div>
     </main>
 
 
