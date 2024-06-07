@@ -9,15 +9,7 @@
     <title>World of Webcraft - Box Model</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/global.css">
-    <style>
-        .box {
-            width: 570px; /* content width */
-            padding: 20px; /* inside spacing */
-            border: 5px solid blue;
-            margin: 30px; /* Outside spacing */
-            background-color: yellow;
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/css/box_model.css">
 </head>
 
 <!-- 'body' section for page content -->
@@ -176,32 +168,50 @@
         <pre class="container">
             <code>
 .box {
-    width: 570px;
-    padding: 20px;
-    border: 5px solid blue;
-    margin: 30px;
-    background-color: yellow;
+    width: 100%;
+    max-width: 61rem;
+    padding: 1.25rem;
+    border: .3125rem solid darkgreen;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    font-size: 1.125rem;
+    font-family: monospace;
 }
 
-&lt;div class="box"&gt;
-    The text is the 'content'. &lt;br&gt;
-    The 'width' property specifies the width of the content area; of the element. &lt;br&gt;
-    The 'padding' property specifies the width on both the left and right sides of the content. &lt;br&gt;
-    The 'border' is in blue. &lt;br&gt;
-    The 'margin' is the outside spacing. &lt;br&gt;
-    The 'background-color' is in yellow. &lt;br&gt;
+&lt;div class="container"&gt;
+    &lt;div class="box"&gt;
+        - The text is the 'content'. &lt;br&gt;
+        &lt;br&gt;
+        - The 'width' property specifies the width of the content area; of the element. &lt;br&gt;
+        &lt;br&gt;
+        - The 'padding' property specifies the width on both the left and right sides of the content. &lt;br&gt;
+        &lt;br&gt;
+        - The 'border' is in dark green. &lt;br&gt;
+        &lt;br&gt;
+        - The 'margin' is the outside spacing. &lt;br&gt;
+        &lt;br&gt;
+        - The 'background-color' is in black. &lt;br&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
             </code>
         </pre>
 
         <h3>Output</h3>
-        <div class="box">
-            The text is the 'content'. <br>
-            The 'width' property specifies the width of the content area; of the element. <br>
-            The 'padding' property specifies the width on both the left and right sides of the content. <br>
-            The 'border' is in blue. <br>
-            The 'margin' is the outside spacing. <br>
-            The 'background-color' is in yellow. <br>
+        <div class="container">
+            <div class="box">
+                - The text is the 'content'. <br>
+                <br>
+                - The 'width' property specifies the width of the content area; of the element. <br>
+                <br>
+                - The 'padding' property specifies the width on both the left and right sides of the content. <br>
+                <br>
+                - The 'border' is in dark green. <br>
+                <br>
+                - The 'margin' is the outside spacing. <br>
+                <br>
+                - The 'background-color' is in black. <br>
+            </div>
         </div>
     </main>
 
