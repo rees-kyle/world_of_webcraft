@@ -9,29 +9,7 @@
     <title>World of Webcraft - Float and Clear Properties</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/global.css">
-    <style>
-        .container {
-            overflow: hidden; /* hides any content that spills outside its container, maintaining a clean layout */
-        }
-
-        .float-left {
-            float: left;
-            margin-right: 10px;
-        }
-
-        .float-right {
-            float: right;
-        }
-
-        .float-none {
-            float: none;
-        }
-
-        .clear-left {
-            clear: left;
-            background-color: rgb(74, 190, 105);
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/css/float_and_clear_properties.css">
 </head>
 
 <!-- 'body' section for page content -->
@@ -201,37 +179,41 @@
             <code>
 .float-left {
     float: left;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 
 &lt;div class="container"&gt;
-    &lt;img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left"&gt;
-    &lt;p&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.
-    &lt;/p&gt;
+    &lt;div class="example-container"&gt;
+        &lt;img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left"&gt;
+        &lt;p&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.
+        &lt;/p&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
             </code>
         </pre>
 
         <h4>Output</h4>
         <div class="container">
-            <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left">
-            <p>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.
-            </p>
+            <div class="example-container">
+                <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left">
+                <p>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.
+                </p>
+            </div>
         </div>
 
             <!-- right -->
@@ -244,26 +226,52 @@
 }
 
 
-&lt;img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-right"&gt;
+&lt;div class="container"&gt;
+    &lt;div class="example-container"&gt;
+        &lt;img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-right"&gt;
+        &lt;p&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
             </code>
         </pre>
 
         <h4>Output</h4>
         <div class="container">
-            <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-right">
-            <p>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.
-            </p>
+            <div class="example-container">
+                <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-right">
+                <p>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.
+                </p>
+
+                <p class="wrap-container">
+                    Floating an element in CSS removes it from the normal document flow,
+                    which can lead to unexpected layout behaviors, especially on smaller devices where space is limited.
+                    These behaviors may cause content to overlap or disrupt the intended layout.
+                    To address this issue, we use a technique called clearing floats,
+                    which ensures that subsequent content flows as intended.
+                    You can learn more about clearing floats further down this page.
+                </p>
+            </div>
         </div>
 
             <!-- none -->
         <h3>None</h3>
+        <p>Setting float: none; in CSS removes any floating behavior applied to an element.</p>
+
         <h4>Code</h4>
         <pre class="container">
             <code>
@@ -296,54 +304,64 @@
 
 
 &lt;div class="container"&gt;
-    &lt;img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left"&gt;
-    &lt;p class="clear-left"&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.&lt;br&gt;
-        This is a paragraph.
-    &lt;/p&gt;
+    &lt;div class="example-container"&gt;
+        &lt;img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left"&gt;
+        &lt;p class="clear-left"&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.&lt;br&gt;
+            This is a paragraph.
+        &lt;/p&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
             </code>
         </pre>
 
         <h4>Output</h4>
         <div class="container">
-            <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left">
-            <p class="clear-left">
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.
-            </p>
+            <div class="example-container">
+                <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left">
+                <p class="clear-left">
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.
+                </p>
+            </div>
         </div>
         <p>Below is the output without the clear property:</p>
         <div class="container">
-            <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left">
-            <p>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.<br>
-                This is a paragraph.
-            </p>
+            <div class="example-container">
+                <img src="../../images/float.jpg" alt="A rubber duck floating on water" width="250" height="250" class="float-left">
+                <p>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.<br>
+                    This is a paragraph.
+                </p>
+            </div>
         </div>
 
             <!-- others -->
         <h3>Others</h3>
-        <ul>
-            <li><strong>clear: right;</strong> The element will move below any floated elements that are floated to the right.</li>
-        <li><strong>clear: both;</strong> The element will move below any floated elements regardless of their direction (left or right).</li>
-        <li><strong>clear: none;</strong> The element will not move below any floated elements. This is the default value.</li>
-        </ul>
+        <div class="container">
+            <div class="wrap-container">
+                <ul class="bullet-list">
+                    <li><strong>clear: right;</strong> The element will move below any floated elements that are floated to the right.</li>
+                    <li><strong>clear: both;</strong> The element will move below any floated elements regardless of their direction (left or right).</li>
+                    <li><strong>clear: none;</strong> The element will not move below any floated elements. This is the default value.</li>
+                </ul>
+            </div>
+        </div>
     </main>
 
 
