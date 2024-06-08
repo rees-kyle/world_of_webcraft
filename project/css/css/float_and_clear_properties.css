@@ -1,0 +1,19 @@
+.float-left {
+    float: left;
+    margin-right: 0.625rem;
+}
+
+.float-right {
+    float: right;
+    flex: 1 1 30%;
+    margin: 0 10px 10px 0;
+}
+
+.float-none {
+    float: none;
+}
+
+.clear-left {
+    clear: left;
+    background-color: rgb(74, 190, 105);
+}
