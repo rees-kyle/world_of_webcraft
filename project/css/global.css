@@ -80,17 +80,24 @@ small {
 }
 
 
-/* container */
+/* containers */
 .container {
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
 }
 
-
-/* container for examples */
+/* for examples */
 .example-container {
     white-space: nowrap;
+    width: 100%;
+    padding: 1rem;
+    overflow: auto;
+}
+
+/* for examples that need wrap */
+.wrap-container {
+    white-space: wrap;
     width: 100%;
     padding: 1rem;
     overflow: auto;
