@@ -1,0 +1,24 @@
+.output {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.line-through {
+    text-decoration: line-through
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 45.5rem) {
+    .output {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    }
+
+    .output h2 {
+    font-size: 1.5rem;
+    }
+}
