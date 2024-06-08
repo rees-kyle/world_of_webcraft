@@ -121,6 +121,12 @@ hr {
 }
 
 
+/* bulleted lists*/
+.bullet-list {
+    list-style-type: disc; /* Set the bullet style */
+}
+
+
 dl {
     color: black;
     margin-bottom: 1.25rem; /* adds spacing below the definition list */
