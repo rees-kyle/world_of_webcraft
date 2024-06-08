@@ -88,6 +88,15 @@ small {
 }
 
 
+/* container for examples */
+.example-container {
+    white-space: nowrap;
+    width: 100%;
+    padding: 1rem;
+    overflow: auto;
+}
+
+
 /* text-align right */
 .right-align {
     text-align: right;
