@@ -9,46 +9,7 @@
     <title>World of Webcraft - Flexbox</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/global.css">
-    <style>
-        /* flex container setup */
-        .flex-container {
-            display: flex; /* enable Flexbox */
-            flex-direction: row; /* arrange items in a row */
-            justify-content: space-between; /* distribute space between items */
-            align-items: center; /* center items vertically */
-            height: 40vh; /* set height of container */
-            border: 2px solid #ccc; /* add a border around the container */
-            padding: 10px; /* add padding inside the container */
-        }
-
-        /* basic styling for flex items */
-        .flex-item {
-            background-color: #f0f0f0; /* light gray background */
-            padding: 20px; /* padding inside each item */
-            margin: 10px; /* margin outside each item */
-            border: 1px solid #ddd; /* light border around each item */
-            text-align: center; /* center text inside each item */
-        }
-
-        /* specific styles for flex-item-1 */
-        .flex-item-1 {
-            flex: 1 1 auto; /* 
-                flex-grow: 1 (item can grow to fill space),
-                flex-shrink: 1 (item can shrink if necessary),
-                flex-basis: auto (base size of the item) 
-            */
-        }
-
-        .flex-item-2 {
-            flex: 2 1 auto; /* flex-grow: 2, flex-shrink: 1, flex-basis: auto */
-            align-self: flex-start; /* align item to the start of the cross axis, overriding the container's alignment */
-        }
-
-        .flex-item-3 {
-            flex: 1 0 auto; /* flex-grow: 1, flex-shrink: 0, flex-basis: auto */
-            align-self: flex-end; /* overrides the container's align-items */
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/css/flexbox.css">
 </head>
 
 <!-- 'body' section for page content -->
@@ -211,15 +172,15 @@
     justify-content: space-between;
     align-items: center;
     height: 40vh;
-    border: 2px solid #ccc;
-    padding: 10px;
+    border: 0.125rem solid white;
+    padding: 0.625rem;
 }
 
 .flex-item {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #ddd;
+    background-color: green;
+    padding: 1.25rem;
+    margin: 0.625rem;
+    border: 0.0625rem solid black;
     text-align: center;
 }
 
@@ -238,20 +199,28 @@
 }
 
 
-&lt;div class="flex-container"&gt;
-    &lt;div class="flex-item flex-item-1"&gt;Item 1&lt;/div&gt;
-    &lt;div class="flex-item flex-item-2"&gt;Item 2&lt;/div&gt;
-    &lt;div class="flex-item flex-item-3"&gt;Item 3&lt;/div&gt;
+&lt;div class="container"&gt;
+    &lt;div class="example-container"&gt;
+        &lt;div class="flex-container"&gt;
+            &lt;div class="flex-item flex-item-1"&gt;Item 1&lt;/div&gt;
+            &lt;div class="flex-item flex-item-2"&gt;Item 2&lt;/div&gt;
+            &lt;div class="flex-item flex-item-3"&gt;Item 3&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
             </code>
         </pre>
 
         <h2>Output</h2>
         <!-- flex container with three items -->
-        <div class="flex-container">
-            <div class="flex-item flex-item-1">Item 1</div>
-            <div class="flex-item flex-item-2">Item 2</div>
-            <div class="flex-item flex-item-3">Item 3</div>
+        <div class="container">
+            <div class="example-container">
+                <div class="flex-container">
+                    <div class="flex-item flex-item-1">Item 1</div>
+                    <div class="flex-item flex-item-2">Item 2</div>
+                    <div class="flex-item flex-item-3">Item 3</div>
+                </div>
+            </div>
         </div>
     </main>
 
