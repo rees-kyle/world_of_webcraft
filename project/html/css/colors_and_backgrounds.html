@@ -9,46 +9,7 @@
     <title>World of Webcraft - Colors and Backgrounds</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/global.css">
-    <style>
-        .name {
-            color:red;
-        }
-
-        .hex-code {
-            color: #00ff99;
-        }
-
-        .rgb {
-            color: rgb(0, 0, 250);
-        }
-
-        .rgba {
-            color: rgba(0, 0, 250, 0.5); /* Blue color with 50% opacity */
-        }
-
-        .hsl {
-            color: hsl(0, 100%, 50%);
-        }
-
-        .hsla {
-            color: hsla(0, 100%, 50%, 0.5);
-        }
-
-        .background-color {
-            background-color: green;
-        }
-
-        .image {
-            background-image: url('../../images/mountains.jpg');
-            max-width: 30%;
-            height: auto; 
-            background-size: cover;
-            background-position: center;
-            padding: 100px 100px 85px;
-            color: white;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/css/colors_and_backgrounds.css">
 </head>
 
 <!-- 'body' section for page content -->
@@ -211,15 +172,27 @@
         <pre class="container">
             <code>
 .name {
-    color: red;
+    color:red;
+    display: inline-block;
+    background-color: black;
+    padding: 1rem;
 }
 
-&lt;p class="name"&gt;Set the color using the name like red.&lt;/p&gt;
+&lt;div class="container"&gt;
+    &lt;div class="wrap-container"&gt;
+        &lt;p class="name"&gt;Set the color using the name like red.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
             </code>
         </pre>
 
         <h5>Output</h5>
-        <p class="name">Set the color using the name like red.</p>
+        <div class="container">
+            <div class="wrap-container">
+                <p class="name">Set the color using the name like red.</p>
+            </div>
+        </div>
+
 
             <!-- hex code -->
         <h4>Hex Code</h4>
@@ -227,15 +200,27 @@
         <pre class="container">
             <code>
 .hex-code {
-    color: #00ff99;
+    color: #5bffbe;
+    background-color: black;
+    display: inline-block;
+    padding: 1rem;
 }
 
-&lt;p class="hex-code"&gt;Represents colors using a six-character (#RRGGBB) hexadecimal code.&lt;/p&gt;
-            </code>
+&lt;div class="container"&gt;
+    &lt;div class="wrap-container"&gt;
+        &lt;p class="hex-code"&gt;Represents colors using a six-character (#RRGGBB) hexadecimal code.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
         </pre>
 
         <h5>Output</h5>
-        <p class="hex-code">Represents colors using a six-character (#RRGGBB) hexadecimal code.</p>
+        <div class="container">
+            <div class="wrap-container">
+                <p class="hex-code">Represents colors using a six-character (#RRGGBB) hexadecimal code.</p>
+            </div>
+        </div>
+
 
             <!-- rgb -->
         <h4>RGB</h4>
@@ -243,15 +228,27 @@
         <pre class="container">
             <code>
 .rgb {
-    color: rgb(0, 0, 250);
+    color: rgb(89, 94, 255);
+    background-color: black;
+    display: inline-block;
+    padding: 1rem;
 }
 
-&lt;p class="rgb"&gt;Define colors by specifying the intensity of Red, Green, and Blue, each ranging from 0 to 255.&lt;/p&gt;
+&lt;div class="container"&gt;
+    &lt;div class="wrap-container"&gt;
+        &lt;p class="rgb"&gt;Define colors by specifying the intensity of Red, Green, and Blue, each ranging from 0 to 255.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;            
             </code>
         </pre>
 
         <h5>Output</h5>
-        <p class="rgb">Define colors by specifying the intensity of Red, Green, and Blue, each ranging from 0 to 255.</p>
+        <div class="container">
+            <div class="wrap-container">
+                <p class="rgb">Define colors by specifying the intensity of Red, Green, and Blue, each ranging from 0 to 255.</p>
+            </div>
+        </div>
+
 
             <!-- rgba -->
         <h4>RGBA</h4>
@@ -259,15 +256,28 @@
         <pre class="container">
             <code>
 .rgba {
-    color: rgba(0, 0, 250, 0.5);
+    color: rgba(89, 94, 255, 0.50);
+    font-weight: bold;
+    background-color: black;
+    display: inline-block;
+    padding: 1rem;
 }
 
-&lt;p class="rgba"&gt;Define colors by specifying the intensity of Red, Green, Blue, and an Alpha channel for opacity, each ranging from 0 to 255 for RGB and 0 to 1 for Alpha.&lt;/p&gt;
+&lt;div class="container"&gt;
+    &lt;div class="wrap-container"&gt;
+        &lt;p class="rgba"&gt;Define colors by specifying the intensity of Red, Green, Blue, and an Alpha channel for opacity, each ranging from 0 to 255 for RGB and 0 to 1 for Alpha.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;        
             </code>
         </pre>
 
         <h5>Output</h5>
-        <p class="rgba">Define colors by specifying the intensity of Red, Green, Blue, and an Alpha channel for opacity, each ranging from 0 to 255 for RGB and 0 to 1 for Alpha.</p>
+        <div class="container">
+            <div class="wrap-container">
+                <p class="rgba">Define colors by specifying the intensity of Red, Green, Blue, and an Alpha channel for opacity, each ranging from 0 to 255 for RGB and 0 to 1 for Alpha.</p>
+            </div>
+        </div>
+
 
             <!-- hsl -->
         <h4>HSL</h4>
@@ -276,14 +286,25 @@
             <code>
 .hsl {
     color: hsl(0, 100%, 50%);
+    background-color: black;
+    display: inline-block;
+    padding: 1rem;
 }
 
-&lt;p class="hsl"&gt;Define colors by specifying Hue (0 to 360), Saturation (0% to 100%), and Lightness (0% to 100%).&lt;/p&gt;
+&lt;div class="container"&gt;
+    &lt;div class="wrap-container"&gt;
+        &lt;p class="hsl"&gt;Define colors by specifying Hue (0 to 360), Saturation (0% to 100%), and Lightness (0% to 100%).&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;        
             </code>
         </pre>
 
         <h5>Output</h5>
-        <p class="hsl">Define colors by specifying Hue (0 to 360), Saturation (0% to 100%), and Lightness (0% to 100%).</p>
+        <div class="container">
+            <div class="wrap-container">
+                <p class="hsl">Define colors by specifying Hue (0 to 360), Saturation (0% to 100%), and Lightness (0% to 100%).</p>
+            </div>
+        </div>
 
             <!-- hsla -->
         <h4>HSLA</h4>
@@ -292,14 +313,27 @@
             <code>
 .hsla {
     color: hsla(0, 100%, 50%, 0.5);
+    font-weight: bold;
+    background-color: black;
+    display: inline-block;
+    padding: 1rem;
 }
 
-&lt;p class="hsla"&gt;Define colors by specifying Hue (0 to 360), Saturation (0% to 100%), Lightness (0% to 100%), and Alpha for opacity (0 to 1).&lt;/p&gt;
+&lt;div class="container"&gt;
+    &lt;div class="wrap-container"&gt;
+        &lt;p class="hsla"&gt;Define colors by specifying Hue (0 to 360), Saturation (0% to 100%), Lightness (0% to 100%), and Alpha for opacity (0 to 1).&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;     
             </code>
         </pre>
 
         <h5>Output</h5>
-        <p class="hsla">Define colors by specifying Hue (0 to 360), Saturation (0% to 100%), Lightness (0% to 100%), and Alpha for opacity (0 to 1).</p>
+        <div class="container">
+            <div class="wrap-container">
+                <p class="hsla">Define colors by specifying Hue (0 to 360), Saturation (0% to 100%), Lightness (0% to 100%), and Alpha for opacity (0 to 1).</p>
+            </div>
+        </div>
+
 
 
         <!-- background -->
@@ -310,36 +344,70 @@
         <pre class="container">
             <code>
 .background-color {
-    background-color: green;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    display: inline-block;
+    padding: 1rem;
 }
 
-&lt;div class="background-color"&gt;Green background color.&lt;/div&gt;
+&lt;div class="container"&gt;
+    &lt;div class="example-container"&gt;
+        &lt;div class="background-color"&gt;Green background color.&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;     
             </code>
         </pre>
 
         <h5>Output</h5>
-        <div class="background-color">Green background color.</div>
+        <div class="container">
+            <div class="example-container">
+                <div class="background-color">Black background color.</div>
+            </div>
+        </div>
+
 
             <!-- image -->
         <h4>Image</h4>
         <h5>Code</h5>
         <pre class="container">
             <code>
-.image {
-    background-image: url('../../images/mountains.jpg');
-    background-size: cover;
+.background-image {
+    position: relative;
+    background-image: url('../../images/background-image.jpg');
+    background-size: contain;
     background-position: center;
-    padding: 100px 100px 85px;
+    width: 100%;
+    height: 13.25rem;
+    max-width: 23.44rem;
+}
+
+.background-image p {
+    position: absolute;
+    top: 4.25rem;
+    left: 2.75rem;
     color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-wrap: nowrap;
     text-align: center;
 }
 
-&lt;div class="image"&gt;Text with a background image.&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="background-image"&gt;
+        &lt;p>Background Image&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
             </code>
         </pre>
 
         <h5>Output</h5>
-        <div class="image">Text with a background image.</div>
+        <div class="container">
+            <div class="background-image">
+                <p>Background Image</p>
+            </div>
+        </div>
     </main>
 
 
