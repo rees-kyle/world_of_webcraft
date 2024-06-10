@@ -1,0 +1,17 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 6.25rem 12.5rem 1fr; /* three columns: 6.25rem, 12.5rem, and the rest of the available space */
+    grid-template-rows: 6.25rem 12.5rem auto; /* first row: 6.25rem, second row: 12.5rem and the rest of the available space */
+    grid-gap: 0.625rem; /* between rows and columns */
+}
+
+.grid-item {
+    background-color: green;
+    padding: 1.25rem;
+    border: 0.0625rem solid black;
+}
+
+.spanning-item {
+    grid-column: 2 / 4; /* item starts at the second column and ends at the fourth column */
+    grid-row: 1; /* item occupies the first row */
+}
