@@ -9,25 +9,7 @@
     <title>World of Webcraft - Grid</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/global.css">
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: 100px 200px 1fr; /* Three columns: 100px, 200px, and the rest of the available space */
-            grid-template-rows: 75px auto; /* Two rows: 50px tall, and the rest of the available space */
-            grid-gap: 10px; /* 10px gap between rows and columns */
-        }
-  
-        .grid-item {
-            background-color: #ddd;
-            padding: 10px;
-            border: 1px solid #999;
-        }
-  
-        .spanning-item {
-            grid-column: 2 / 4; /* Item starts at the second column and ends at the fourth column */
-            grid-row: 1; /* Item occupies the first row */
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/css/grid.css">
 </head>
 
 <!-- 'body' section for page content -->
@@ -186,15 +168,15 @@
             <code>
 .grid-container {
     display: grid;
-    grid-template-columns: 100px 200px 1fr;
-    grid-template-rows: 75px auto;
-    grid-gap: 10px;
+    grid-template-columns: 6.25rem 12.5rem 1fr;
+    grid-template-rows: 6.25rem 12.5rem auto;
+    grid-gap: 0.625rem;
 }
 
 .grid-item {
-    background-color:
-    padding: 10px;
-    border: 1px solid
+    background-color: green;
+    padding: 1.25rem;
+    border: 0.0625rem solid black;
 }
 
 .spanning-item {
@@ -203,33 +185,41 @@
 }
 
 
-&lt;div class="grid-container"&gt;
-    &lt;div class="grid-item"&gt;1&lt;/div&gt;
-    &lt;div class="grid-item spanning-item"&gt;2 (Spanning Item)&lt;/div&gt;
-    &lt;div class="grid-item"&gt;3&lt;/div&gt;
-    &lt;div class="grid-item"&gt;4&lt;/div&gt;
-    &lt;div class="grid-item"&gt;5&lt;/div&gt;
-    &lt;div class="grid-item"&gt;6&lt;/div&gt;
-    &lt;div class="grid-item"&gt;7&lt;/div&gt;
-    &lt;div class="grid-item"&gt;8&lt;/div&gt;
-    &lt;div class="grid-item"&gt;9&lt;/div&gt;
-    &lt;div class="grid-item"&gt;10&lt;/div&gt;
+&lt;div class="container"&gt;
+    &lt;div class="example-container"&gt;
+        &lt;div class="grid-container"&gt;
+            &lt;div class="grid-item"&gt;1&lt;/div&gt;
+            &lt;div class="grid-item spanning-item"&gt;2 (Spanning Item)&lt;/div&gt;
+            &lt;div class="grid-item"&gt;3&lt;/div&gt;
+            &lt;div class="grid-item"&gt;4&lt;/div&gt;
+            &lt;div class="grid-item"&gt;5&lt;/div&gt;
+            &lt;div class="grid-item"&gt;6&lt;/div&gt;
+            &lt;div class="grid-item"&gt;7&lt;/div&gt;
+            &lt;div class="grid-item"&gt;8&lt;/div&gt;
+            &lt;div class="grid-item"&gt;9&lt;/div&gt;
+            &lt;div class="grid-item"&gt;10&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
             </code>
         </pre>
 
         <h2>Output</h2>
-        <div class="grid-container">
-            <div class="grid-item">1</div>
-            <div class="grid-item spanning-item">2 (Spanning Item)</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>
-            <div class="grid-item">10</div>
+        <div class="container">
+            <div class="example-container">
+                <div class="grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item spanning-item">2 (Spanning Item)</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                    <div class="grid-item">10</div>
+                </div>
+            </div>
         </div>
     </main>
 
