@@ -124,6 +124,12 @@ hr {
 /* bulleted lists*/
 .bullet-list {
     list-style-type: disc; /* Set the bullet style */
+    padding-left: 1.25rem;
+}
+
+.bullet-list li {
+    margin-bottom: 0.625rem;
+    line-height: 1.5;
 }
 
 
