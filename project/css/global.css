@@ -610,6 +610,8 @@ nav a:hover {
     display: block;
     padding-right: .625rem;
     padding-left: .625rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 .menu a:hover {
@@ -760,8 +762,8 @@ nav a:hover {
     }
 
     .menu a {
-        padding-top: .46875rem;
-        padding-bottom: .46875rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     code {
