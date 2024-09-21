@@ -1,0 +1,11 @@
+/* adding/removing classes: */
+.highlight {
+    background-color: yellow;
+}
+
+/* changing inline styles: */
+#myElement {
+    width: 12.5rem;
+    height: 6.25rem;
+    background-color: yellow; /* initial */
+}

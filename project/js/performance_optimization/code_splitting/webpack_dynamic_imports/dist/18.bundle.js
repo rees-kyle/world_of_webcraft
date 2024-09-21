@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_webpack_project=self.webpackChunkmy_webpack_project||[]).push([[18],{18:(e,c,o)=>{function a(){console.log("Heavy module loaded and function executed.")}o.r(c),o.d(c,{load:()=>a})}}]);

@@ -1,0 +1,5 @@
+/* style for highlighting elements */
+.highlight {
+    border: 0.125rem solid red;
+    padding: 0.625rem;
+}
