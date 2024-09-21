@@ -754,7 +754,7 @@ nav a:hover {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        width: 8rem;
+        width: 19rem;
         display: none;
         position: absolute; /* position relative to parent submenu item */
         left: 100%; /* position to the right of the parent 'submenu' */
