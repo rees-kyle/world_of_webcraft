@@ -96,9 +96,10 @@
             <h4>Output</h4>
             <div class="container">
                 <div class="pattern-container">
-                <p>Postcode:</p>
+                <label for="postcode">Postcode:</label>
                 <input 
-                    type="text" 
+                    type="text"
+                    id="postcode"
                     name="postcode" 
                     pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]?\s[0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}"
                     title="Enter a valid UK postcode."
@@ -135,7 +136,7 @@
             <div class="container">
                 <div class="input-container">
                     <label for="age" class="age-label">Age:</label>
-                    <input type="number" name="age" min="18" max="123">
+                    <input type="number" id="age" name="age" min="18" max="123">
                 </div>
             </div>
 
@@ -154,7 +155,7 @@
             <div class="container">
                 <div class="input-container">
                     <label for="username" class="text-label">Username:</label>
-                    <input type="text" name="username" minlength="3" maxlength="12">
+                    <input type="text" id="username" name="username" required minlength="3" maxlength="12" pattern="[A-Za-z0-9]+" title="Username should be alphanumeric and at least 3 characters long.">
                 </div>
             </div>
 
