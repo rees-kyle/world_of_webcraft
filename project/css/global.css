@@ -331,6 +331,7 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     max-width: 30rem;
+    font-weight: bold;
 }
 
 .radio-container p {
@@ -361,6 +362,7 @@ input[type="radio"] {
     margin-top: .25rem;
     margin-bottom: 3rem;
     width: 100%;
+    font-weight: bold;
 }
 
 .select-container p {
@@ -521,6 +523,7 @@ textarea:focus {
     margin-top: .25rem;
     margin-bottom: 3rem;
     max-width: 40rem;
+    font-weight: bold;
 }
 
 .pattern-container p {
