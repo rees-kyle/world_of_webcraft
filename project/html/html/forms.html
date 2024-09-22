@@ -76,8 +76,17 @@
                 <code>
 &lt;div class="container"&gt;
     &lt;div class="input-container"&gt;
-        &lt;label for="username"&gt;Username:&lt;/label&gt;
-        &lt;input type="text" id="username" name="username" required&gt;
+        &lt;label for="username" class="text-label"&gt;Username:&lt;/label&gt;
+        &lt;input
+            type="text"
+            id="username"
+            name="username"
+            required
+            minlength="3"
+            maxlength="12"
+            pattern="[A-Za-z0-9]+"
+            title="Username should be alphanumeric and at least 3 characters long."
+        &gt;
     &lt;/div&gt;
 &lt;/div&gt;
                 </code>
@@ -87,7 +96,16 @@
             <div class="container">
                 <div class="input-container">
                     <label for="username" class="text-label">Username:</label>
-                    <input type="text" id="username" name="username" required minlength="3" maxlength="12" pattern="[A-Za-z0-9]+" title="Username should be alphanumeric and at least 3 characters long.">
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        required
+                        minlength="3"
+                        maxlength="12"
+                        pattern="[A-Za-z0-9]+"
+                        title="Username should be alphanumeric and at least 3 characters long."
+                    >
                 </div>
             </div>
 
@@ -100,7 +118,15 @@
 &lt;div class="container"&gt;
     &lt;div class="input-container"&gt;
         &lt;label for="password" class="password-label"&gt;Password:&lt;/label&gt;
-        &lt;input type="password" id="password" name="password" required&gt;
+        &lt;input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="8"
+            maxlength="30"
+            title="Password must be at least 8 characters long."
+        &gt;
     &lt;/div&gt;
 &lt;/div&gt;
                 </code>
@@ -110,7 +136,15 @@
             <div class="container">
                 <div class="input-container">
                     <label for="password" class="password-label">Password:</label>
-                    <input type="password" id="password" name="password" required minlength="8" title="Password must be at least 8 characters long.">
+                    <input 
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                        minlength="8"
+                        maxlength="30"
+                        title="Password must be at least 8 characters long."
+                    >
                 </div>
             </div>
 
@@ -120,16 +154,18 @@
             <h4>Code</h4>
             <pre class="container">
                 <code>
-&lt;div class="radio-container"&gt;
-    &lt;p&gt;Preferred mode of transportation:&lt;/p&gt;
-    &lt;label for="car" class="radio-label"&gt;Car&lt;/label&gt;
-    &lt;input type="radio" id="car" name="transportation" value="car"&gt;
-    &lt;label for="bike" class="radio-label"&gt;Bike&lt;/label&gt;
-    &lt;input type="radio" id="bike" name="transportation" value="bike"&gt;
-    &lt;label for="walk" class="radio-label"&gt;Walk&lt;/label&gt;
-    &lt;input type="radio" id="walk" name="transportation" value="walk"&gt;
-    &lt;label for="bus" class="radio-label"&gt;Bus&lt;/label&gt;
-    &lt;input type="radio" id="bus" name="transportation" value="bus"&gt;
+&lt;div class="container"&gt;
+    &lt;fieldset class="radio-container"&gt;
+        &lt;legend&gt;Preferred mode of transportation:&lt;/legend&gt;
+        &lt;label for="car" class="radio-label"&gt;Car&lt;/label&gt;
+        &lt;input type="radio" id="car" name="transportation" value="car" required&gt;
+        &lt;label for="bike" class="radio-label"&gt;Bike&lt;/label&gt;
+        &lt;input type="radio" id="bike" name="transportation" value="bike" required&gt;
+        &lt;label for="walk" class="radio-label"&gt;Walk&lt;/label&gt;
+        &lt;input type="radio" id="walk" name="transportation" value="walk" required&gt;
+        &lt;label for="bus" class="radio-label"&gt;Bus&lt;/label&gt;
+        &lt;input type="radio" id="bus" name="transportation" value="bus" required&gt;
+    &lt;/fieldset&gt;  
 &lt;/div&gt;
                 </code>
             </pre>
@@ -146,7 +182,7 @@
                     <input type="radio" id="walk" name="transportation" value="walk" required>
                     <label for="bus" class="radio-label">Bus</label>
                     <input type="radio" id="bus" name="transportation" value="bus" required>
-                </fields>  
+                </fieldset>
             </div>
 
             <!-- checkbox -->
@@ -186,13 +222,16 @@
             <h4>Code</h4>
             <pre class="container">
                 <code>
-&lt;div class="select-container"&gt;
-    &lt;p&gt;Country:&lt;/p&gt;
-    &lt;select name="country"&gt;
-        &lt;option value="usa"&gt;United States&lt;/option&gt;
-        &lt;option value="canada"&gt;Canada&lt;/option&gt;
-        &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
-    &lt;/select&gt;
+&lt;div class="container"&gt;
+    &lt;div class="select-container"&gt;
+        &lt;label for="country"&gt;Country:&lt;/label&gt;
+        &lt;select name="country" id="country" required&gt;
+            &lt;option value="" disabled selected&gt;Select a country&lt;/option&gt;
+            &lt;option value="usa"&gt;United States&lt;/option&gt;
+            &lt;option value="canada"&gt;Canada&lt;/option&gt;
+            &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
                 </code>
             </pre>
