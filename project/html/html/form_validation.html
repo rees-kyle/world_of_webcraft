@@ -80,9 +80,10 @@
                 <code>
 &lt;div class="container&gt;
     &lt;div class="pattern-container"&gt;
-        &lt;p&gt;Postcode:&lt;/p&gt;
+        &lt;label for="postcode">Postcode:&lt;/label&gt;
         &lt;input 
-            type="text" 
+            type="text"
+            id="postcode"
             name="postcode" 
             pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]?\s[0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}"
             title="Enter a valid UK postcode."
@@ -126,7 +127,7 @@
 &lt;div class="container"&gt;
     &lt;div class="input-container"&gt;
         &lt;label for="age" class="age-label"&gt;Age:&lt;/label&gt;
-        &lt;input type="number" name="age" min="18" max="123"&gt;
+        &lt;input type="number" id="age" name="age" min="18" max="123"&gt;
     &lt;/div&gt;
 &lt;/div&gt;
                 </code>
@@ -146,8 +147,12 @@
             <h4>Code</h4>
             <pre class="container">
                 <code>
-&lt;p&gt;Username:&lt;/p&gt;
-&lt;input type="text" name="username" minlength="3" maxlength="12"&gt;
+&lt;div class="container"&gt;
+    &lt;div class="input-container"&gt;
+        &lt;label for="username" class="text-label"&gt;Username:&lt;/label&gt;
+        &lt;input type="text" id="username" name="username" required minlength="3" maxlength="12" pattern="[A-Za-z0-9]+" title="Username should be alphanumeric and at least 3 characters long."&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                 </code>
             </pre>
 
