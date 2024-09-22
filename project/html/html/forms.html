@@ -87,7 +87,7 @@
             <div class="container">
                 <div class="input-container">
                     <label for="username" class="text-label">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" id="username" name="username" required minlength="3" pattern="[A-Za-z0-9]+" title="Username should be alphanumeric and at least 3 characters long.">
                 </div>
             </div>
 
@@ -110,7 +110,7 @@
             <div class="container">
                 <div class="input-container">
                     <label for="password" class="password-label">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" required minlength="8" title="Password must be at least 8 characters long.">
                 </div>
             </div>
 
@@ -139,13 +139,13 @@
                 <fieldset class="radio-container">
                     <legend>Preferred mode of transportation:</legend>
                     <label for="car" class="radio-label">Car</label>
-                    <input type="radio" id="car" name="transportation" value="car">
+                    <input type="radio" id="car" name="transportation" value="car" required>
                     <label for="bike" class="radio-label">Bike</label>
-                    <input type="radio" id="bike" name="transportation" value="bike">
+                    <input type="radio" id="bike" name="transportation" value="bike" required>
                     <label for="walk" class="radio-label">Walk</label>
-                    <input type="radio" id="walk" name="transportation" value="walk">
+                    <input type="radio" id="walk" name="transportation" value="walk" required>
                     <label for="bus" class="radio-label">Bus</label>
-                    <input type="radio" id="bus" name="transportation" value="bus">
+                    <input type="radio" id="bus" name="transportation" value="bus" required>
                 </fields>  
             </div>
 
@@ -200,8 +200,9 @@
             <h4>Output</h4>
             <div class="container">
                 <div class="select-container">
-                    <p>Country:</p>
-                    <select name="country">
+                    <label for="country">Country:</label>
+                    <select name="country" id="country" required>
+                        <option value="" disabled selected>Select a country</option>
                         <option value="usa">United States</option>
                         <option value="canada">Canada</option>
                         <option value="uk">United Kingdom</option>
