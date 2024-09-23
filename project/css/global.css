@@ -111,6 +111,13 @@ small {
 }
 
 
+/* html-link */
+.html-link {
+    color: #78fff8;
+    text-decoration: none; /* Optional: if you want to remove the underline */
+}
+
+
 /* horizontal lines */
 hr {
     border: none;                           /* removes the default border */
