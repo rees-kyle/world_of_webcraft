@@ -2,7 +2,7 @@
 id: d878xmztn53xejq7slrh3a9
 title: Scratch
 desc: ''
-updated: 1727061567124
+updated: 1729872084583
 created: 1715268049414
 ---
 
@@ -52,18 +52,29 @@ created: 1715268049414
 1. [x] update code snippets in form_validation.html
 1. [x] commit
 1. [x] push
+1. [x] implement formspree
+    1. [x] commit
+1. [x] modify all html pages
+    1. [x] add csp
+    1. [x] remove inline css styles
+1. [x] push
+1. [x] modify multimedia.html
+    1. [x] enhance csp
+    1. [x] remove attributes
+1. [x] push
+1. [x] modify multimedia.html
+    1. [x] update code snippets
+1. [x] commit
+1. [x] push
+1. [x] revert git commit dd005b5bb9a3652d47bd726877e97189fd0b6e72
+1. [x] commit
+1. [x] push
+1. [x] remove fomspree
+1. [x] commit
+1. [x] add form-handler.js
+1. [x] commit
 
 1. [ ] security
-
-## end of project
-
-1. [ ] add form submission
-    1. [x] implement
-    1. [ ] account blocked (awaiting email)
-
-1. [ ] security
-    1. [ ] check if script works (awaiting email)
-
-1. [ ] all html pages
-    1. [ ] add csp
-    1. [ ] remove inline css styles
+    1. [ ] validation
+    1. [ ] user experience
+    1. [ ] input sanitzationr
