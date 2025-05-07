@@ -6,10 +6,14 @@
 <head>
     <meta charset="UTF-8">  <!-- specifies character encoding, 'UTF-8' used internationally -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport config; responsive design, variosus devices -->
+    <!-- Referrer Policy: Prevents leaking your URL when navigating away from the page -->
+    <meta name="referrer" content="no-referrer">
     <title>World of Webcraft - Project Overview</title> <!-- page title displayed in broswer, shared content and search engines -->
     <link rel="stylesheet" href="project/css/reset.css">
     <link rel="stylesheet" href="project/css/global.css">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';">
+    <!-- X-Content-Type-Options: Prevents MIME-type sniffing (ensures content is served as intended) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
 </head>
 
 <!-- 'body' section for page content -->
